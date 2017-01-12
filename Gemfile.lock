@@ -23,6 +23,8 @@ GEM
       sass (~> 3.4)
     jekyll-sitemap (1.0.0)
       jekyll (~> 3.3)
+    jekyll-theme-primer (0.1.6)
+      jekyll (~> 3.3)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
     kramdown (1.13.2)
@@ -50,6 +52,7 @@ DEPENDENCIES
   jekyll (= 3.3.1)
   jekyll-feed (~> 0.6)
   jekyll-sitemap
+  jekyll-theme-primer
   minima (~> 2.0)
 
 RUBY VERSION

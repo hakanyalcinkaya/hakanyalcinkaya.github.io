@@ -1,25 +1,18 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Makefile Kullanın"
 date:   2017-01-12 14:03:11 +0300
-categories: jekyll update
+categories: linux mac
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Bazen kullandığımız komutları unutuyoruz ve her projede farklı farklı komutlar çalıştırmamız gerekebiliyor.. veya dosyaları başkalarına göndereceğimiz zaman hangi komutları kullanmaları gerektiğini tam olarak açıklayamıyabiliyoruz. İşte tam bu noktada projeye özel komutlat oluşturmak için `Makefile` kullanabilirsiniz. 
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+Klasörde oluşturacağınız `Makefile`(uzantısı yok, ilk harfi büyük) dosyasına `serve` komutunu eklediğimizde artık altındaki satırı çalıştıracak.. alttaki satırda yazacağınız komutu başlatmadan önce `tab` tuşuna basmanız gerekiyor.
+{% highlight linux %}
+serve:
+  jekyll serve
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Makefile oluşturmak için tutorial : [makefile-tutorial]
 
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[makefile-tutorial]: http://mrbook.org/blog/tutorials/make/
+
