@@ -78,7 +78,7 @@ end # task :post
 # If you don't specify a file extention we create an index.html at the path specified
 desc "Create a new page."
 task :page do
-  name = ENV["name"] || "new-page.md"
+  name = ENV["name"] || "new-page.markdown"
   filename = File.join(SOURCE, "#{name}")
   filename = File.join(filename, "index.html") if File.extname(filename) == ""
   title = File.basename(filename, File.extname(filename)).gsub(/[\W\_]/, " ").gsub(/\b\w/){$&.upcase}
@@ -94,7 +94,7 @@ task :page do
     post.puts "title: \"#{title}\""
     post.puts 'description: ""'
     post.puts "---"
-    post.puts "{% include JB/setup %}"
+    # post.puts "{% include JB/setup %}"
   end
 end # task :page
 
