@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="english" itemscope itemtype="http://schema.org/Person">
+<head>
+            <meta charset="utf-8">
+        <!-- Site Meta Data -->
+        <title>Django Geolocation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Hakan Yalçınkaya">
+
+        <link rel="shortcut icon" href="">
+
+        <!-- schema.org -->
+        <meta itemprop="name" content="Hakan Yalçınkaya">
+        <meta itemprop="image" content="">
+        <meta itemprop="description" content="">
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+        <!-- Style Meta Data -->
+        <link rel="stylesheet" href="https://hakanyalcinkaya.github.io/theme/css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="https://hakanyalcinkaya.github.io/theme/css/pygments.css" type="text/css"/>
+
+        <!-- Feed Meta Data -->
+            <link href="https://hakanyalcinkaya.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+                  title="Hakan Yalçınkaya ATOM Feed"/>
+
+        <!-- Twitter Feed -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="">
+        <meta name="twitter:image" content="">
+
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:url" content="https://hakanyalcinkaya.github.io/django-geolocation.html">
+    <meta name="twitter:title" content="Hakan Yalçınkaya ~ Django Geolocation">
+    <meta name="twitter:description" content="Django Geolocation ile bir Domain&#39;in ip sinin hangi şehirde barındırıldığını veya bir IP&#39;nin hangi şehre bağlı olduğunu öğrenebilirsiniz. Kurulum : Öncelikle Django&#39;nun kurulu olduğundan ve Virtualenv ile çalışıyorsanız ENVnin aktif olduğundan emin olun. Django projenizde pip install geoip2 pytz komutunu çalıştırın Django projenizin bulunduğu klasörün içine geoip adlı bir …">
+
+    <!-- Facebook Meta Data -->
+    <meta property="og:title" content="Hakan Yalçınkaya ~ Django Geolocation"/>
+    <meta property="og:description" content="Django Geolocation ile bir Domain&#39;in ip sinin hangi şehirde barındırıldığını veya bir IP&#39;nin hangi şehre bağlı olduğunu öğrenebilirsiniz. Kurulum : Öncelikle Django&#39;nun kurulu olduğundan ve Virtualenv ile çalışıyorsanız ENVnin aktif olduğundan emin olun. Django projenizde pip install geoip2 pytz komutunu çalıştırın Django projenizin bulunduğu klasörün içine geoip adlı bir …"/>
+    <meta property="og:image" content=""/>
+</head>
+
+<body>
+<!-- Sidebar -->
+<aside>
+    <!--<center><a href="https://hakanyalcinkaya.github.io"><img id="avatar" src=""></a></center>-->
+    <h1>Hakan Yalçınkaya</h1>
+    <br>
+
+
+    <nav class="nav">
+        <ul class="list-bare">
+
+
+
+        </ul>
+    </nav>
+
+    <p class="social">
+                <a href="https://github.com/hakanyalcinkaya" target="_blank"><img
+                        src="https://hakanyalcinkaya.github.io/theme/images/icons/github.png"></a>
+            <a href="https://hakanyalcinkaya.github.io/feeds/all.atom.xml" rel="alternate">
+                <img src="https://hakanyalcinkaya.github.io/theme/images/icons/rss.png"></a>
+    </p>
+
+        <h2>Categories</h2>
+        <ul class="navbar">
+                <li class="active"><a
+                        href="https://hakanyalcinkaya.github.io/category/django.html">Django</a></li>
+                <li><a
+                        href="https://hakanyalcinkaya.github.io/category/linux.html">Linux</a></li>
+                <li><a
+                        href="https://hakanyalcinkaya.github.io/category/mac.html">Mac</a></li>
+                <li><a
+                        href="https://hakanyalcinkaya.github.io/category/markdown.html">Markdown</a></li>
+        </ul>
+
+        <h2 class="blog_roll_link"><br/>BLOGROLLS</h2>
+        <ul class="navbar">
+                <li><a href="http://getpelican.com/">Pelican</a></li>
+                <li><a href="http://python.org/">Python.org</a></li>
+                <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                <li><a href="#">You can modify those links in your config file</a></li>
+        </ul>
+
+</aside>
+
+<!-- Content -->
+<article>
+    <section id="content">
+        <article>
+            <h2 class="post_title post_detail"><a href="https://hakanyalcinkaya.github.io/django-geolocation.html" rel="bookmark"
+                                                  title="Permalink to Django Geolocation">Django Geolocation</a></h2>
+            <div class="entry-content blog-post">
+                <p><a href="https://docs.djangoproject.com/en/1.10/ref/contrib/gis/geoip2/">Django Geolocation</a>  ile bir Domain'in ip sinin hangi şehirde barındırıldığını veya bir IP'nin hangi şehre bağlı olduğunu öğrenebilirsiniz.</p>
+<h2>Kurulum :</h2>
+<p>Öncelikle <code>Django</code>'nun kurulu olduğundan ve <code>Virtualenv</code> ile çalışıyorsanız <code>ENV</code>nin aktif olduğundan emin olun.</p>
+<ol>
+<li>Django projenizde <code>pip install geoip2 pytz</code> komutunu çalıştırın</li>
+<li>Django projenizin bulunduğu klasörün içine <code>geoip</code> adlı bir klasör oluşturun. </li>
+<li><a href="http://dev.maxmind.com/geoip/geoip2/geolite2/">http://dev.maxmind.com/geoip/geoip2/geolite2/</a> adresinden <a href="http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz">City</a> ve <a href="http://geolite.maxmind.com/download/geoip/database/GeoLite2-Country.mmdb.gz">Country</a> verilerini çekip unzip yaptıktan sonra <code>geoip</code> klasörüne bu dosyaları atın.</li>
+<li><code>settings.py</code> dosyanıza <code>GEOIP_PATH = os.path.join(BASE_DIR, "geoip")</code> ayarını ekleyin.</li>
+<li>Artık test edebilirsiniz ;)</li>
+</ol>
+<h3>Django Shell Test:</h3>
+<p>{% highlight python %}</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p _="%" endhighlight>from django.contrib.gis.geoip2 import GeoIP2
+g = GeoIP2()
+g.city('78.188.177.1')
+{'city': u'Istanbul', 'postal_code': None, 'longitude': 28.9684, 'country_code': u'TR', 'latitude': 41.0214, 'country_name': u'Turkey', 'region': u'34', 'dma_code': None}</p>
+</blockquote>
+</blockquote>
+</blockquote>
+            </div>
+            <div class="post_list">
+                <span>By </span>
+                <a href="https://hakanyalcinkaya.github.io/author/hakan-yalcinkaya.html">@Hakan Yalçınkaya</a>
+                <span> in </span>
+                <span class="post_category"><a href="https://hakanyalcinkaya.github.io/category/django.html" rel="bookmark"
+                                               title="Permalink to Django">[ Django ]</a></span>
+                <span class="post_date">Fri 03 December 2010</span>
+                <div><span>Tags : </span>
+                            <span><a href="https://hakanyalcinkaya.github.io/tag/geolocation.html">#['geolocation', </a></span>
+                            <span><a href="https://hakanyalcinkaya.github.io/tag/django.html">#'django'], </a></span>
+                </div>
+
+                <div class="entry-social">
+                    <span class="twitter"><a target="_blank" rel="nofollow"
+                                             onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"
+                                             title="Twitter"
+                                             href="https://twitter.com/share?url=https://hakanyalcinkaya.github.io/django-geolocation.html&text=Django Geolocation&via="><img
+                            src="https://hakanyalcinkaya.github.io/theme/images/icons/twitter-s.png"></a></span>
+
+                    <span class="gplus"><a target="_blank" title="Google +"
+                                           href="https://plus.google.com/share?url=https://hakanyalcinkaya.github.io/django-geolocation.html&hl=fr"
+                                           rel="nofollow"
+                                           onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
+                            src="https://hakanyalcinkaya.github.io/theme/images/icons/google-s.png"></a></span>
+
+                    <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow"
+                                              onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"
+                                              href="https://www.facebook.com/sharer.php?u=https://hakanyalcinkaya.github.io/django-geolocation.html&t=Django Geolocation"><img
+                            src="https://hakanyalcinkaya.github.io/theme/images/icons/facebook-s.png"></a></span>
+
+                    <a target="_blank" title="Linkedin"
+                       href="https://www.linkedin.com/shareArticle?mini=true&url=https://hakanyalcinkaya.github.io/django-geolocation.html&title=Django Geolocation"
+                       rel="nofollow"
+                       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
+                            src="https://hakanyalcinkaya.github.io/theme/images/icons/linkedin-s.png"></a>
+
+                    <span class="mail"><a
+                            href="mailto:?subject=Django Geolocation&amp;body=Viens découvrir un article à propos de [Django Geolocation] sur le site de Hakan Yalçınkaya. https://hakanyalcinkaya.github.io/django-geolocation.html"
+                            title="Share by Email" target="_blank"><img
+                            src="https://hakanyalcinkaya.github.io/theme/images/icons/mail-s.png"></a></span>
+                </div>
+            </div>
+        </article>
+    </section>
+</article>
+
+<!-- Footer -->
+    <footer>
+        <p>
+            Blog powered by <a href="http://getpelican.com/">Pelican</a>,
+            which takes great advantage of <a href="http://python.org">Python</a>.
+            Theme <a href="https://github.com/parbhat/pelican-blue">Pelican-Blue</a> by <a
+                href="https://parbhatpuri.com/">@parbhat</a>.
+        </p>
+    </footer>
+
+
+</body>
+</html>

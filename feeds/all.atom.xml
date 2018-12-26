@@ -1,2 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Hakan Yalçınkaya</title><link href="https://hakanyalcinkaya.github.io/" rel="alternate"></link><link href="https://hakanyalcinkaya.github.io/feeds/all.atom.xml" rel="self"></link><id>https://hakanyalcinkaya.github.io/</id><updated>2010-12-03T10:20:00+01:00</updated><entry><title>Markdown'in Onemi</title><link href="https://hakanyalcinkaya.github.io/markdownin-onemi.html" rel="alternate"></link><published>2010-12-03T10:20:00+01:00</published><updated>2010-12-03T10:20:00+01:00</updated><author><name>Hakan Yalçınkaya</name></author><id>tag:hakanyalcinkaya.github.io,2010-12-03:/markdownin-onemi.html</id><summary type="html">&lt;p&gt;Bircok yerde bahsettim&lt;/p&gt;</summary><content type="html">&lt;p&gt;Bircok yerde bahsettim&lt;/p&gt;</content></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Hakan Yalçınkaya</title><link href="https://hakanyalcinkaya.github.io/" rel="alternate"></link><link href="https://hakanyalcinkaya.github.io/feeds/all.atom.xml" rel="self"></link><id>https://hakanyalcinkaya.github.io/</id><updated>2010-12-03T10:20:00+01:00</updated><entry><title>Django Geolocation</title><link href="https://hakanyalcinkaya.github.io/django-geolocation.html" rel="alternate"></link><published>2010-12-03T10:20:00+01:00</published><updated>2010-12-03T10:20:00+01:00</updated><author><name>Hakan Yalçınkaya</name></author><id>tag:hakanyalcinkaya.github.io,2010-12-03:/django-geolocation.html</id><summary type="html">&lt;p&gt;&lt;a href="https://docs.djangoproject.com/en/1.10/ref/contrib/gis/geoip2/"&gt;Django Geolocation&lt;/a&gt;  ile bir Domain'in ip sinin hangi şehirde barındırıldığını veya bir IP'nin hangi şehre bağlı olduğunu öğrenebilirsiniz.&lt;/p&gt;
+&lt;h2&gt;Kurulum :&lt;/h2&gt;
+&lt;p&gt;Öncelikle &lt;code&gt;Django&lt;/code&gt;'nun kurulu olduğundan ve &lt;code&gt;Virtualenv&lt;/code&gt; ile çalışıyorsanız &lt;code&gt;ENV&lt;/code&gt;nin aktif olduğundan emin olun.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Django projenizde &lt;code&gt;pip install geoip2 pytz&lt;/code&gt; komutunu çalıştırın&lt;/li&gt;
+&lt;li&gt;Django projenizin bulunduğu klasörün içine &lt;code&gt;geoip&lt;/code&gt; adlı bir …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://docs.djangoproject.com/en/1.10/ref/contrib/gis/geoip2/"&gt;Django Geolocation&lt;/a&gt;  ile bir Domain'in ip sinin hangi şehirde barındırıldığını veya bir IP'nin hangi şehre bağlı olduğunu öğrenebilirsiniz.&lt;/p&gt;
+&lt;h2&gt;Kurulum :&lt;/h2&gt;
+&lt;p&gt;Öncelikle &lt;code&gt;Django&lt;/code&gt;'nun kurulu olduğundan ve &lt;code&gt;Virtualenv&lt;/code&gt; ile çalışıyorsanız &lt;code&gt;ENV&lt;/code&gt;nin aktif olduğundan emin olun.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Django projenizde &lt;code&gt;pip install geoip2 pytz&lt;/code&gt; komutunu çalıştırın&lt;/li&gt;
+&lt;li&gt;Django projenizin bulunduğu klasörün içine &lt;code&gt;geoip&lt;/code&gt; adlı bir klasör oluşturun. &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://dev.maxmind.com/geoip/geoip2/geolite2/"&gt;http://dev.maxmind.com/geoip/geoip2/geolite2/&lt;/a&gt; adresinden &lt;a href="http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz"&gt;City&lt;/a&gt; ve &lt;a href="http://geolite.maxmind.com/download/geoip/database/GeoLite2-Country.mmdb.gz"&gt;Country&lt;/a&gt; verilerini çekip unzip yaptıktan sonra &lt;code&gt;geoip&lt;/code&gt; klasörüne bu dosyaları atın.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;settings.py&lt;/code&gt; dosyanıza &lt;code&gt;GEOIP_PATH = os.path.join(BASE_DIR, "geoip")&lt;/code&gt; ayarını ekleyin.&lt;/li&gt;
+&lt;li&gt;Artık test edebilirsiniz ;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Django Shell Test:&lt;/h3&gt;
+&lt;p&gt;{% highlight python %}&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p _="%" endhighlight&gt;from django.contrib.gis.geoip2 import GeoIP2
+g = GeoIP2()
+g.city('78.188.177.1')
+{'city': u'Istanbul', 'postal_code': None, 'longitude': 28.9684, 'country_code': u'TR', 'latitude': 41.0214, 'country_name': u'Turkey', 'region': u'34', 'dma_code': None}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;</content><category term="['geolocation'"></category><category term="'django']"></category></entry><entry><title>Makefile Kullanın</title><link href="https://hakanyalcinkaya.github.io/makefile-kullanin.html" rel="alternate"></link><published>2010-12-03T10:20:00+01:00</published><updated>2010-12-03T10:20:00+01:00</updated><author><name>Hakan Yalçınkaya</name></author><id>tag:hakanyalcinkaya.github.io,2010-12-03:/makefile-kullanin.html</id><summary type="html">&lt;p&gt;Bazen kullandığımız komutları unutuyoruz ve her projede farklı farklı komutlar çalıştırmamız gerekebiliyor.. veya dosyaları başkalarına göndereceğimiz zaman hangi komutları kullanmaları gerektiğini tam olarak açıklayamıyabiliyoruz. İşte tam bu noktada projeye özel komutlat oluşturmak için &lt;code&gt;Makefile&lt;/code&gt; kullanabilirsiniz. &lt;/p&gt;
+&lt;p&gt;Klasörde oluşturacağınız &lt;code&gt;Makefile&lt;/code&gt;(uzantısı yok, ilk harfi büyük) dosyasına &lt;code&gt;serve&lt;/code&gt; komutunu eklediğimizde artık altındaki satırı …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Bazen kullandığımız komutları unutuyoruz ve her projede farklı farklı komutlar çalıştırmamız gerekebiliyor.. veya dosyaları başkalarına göndereceğimiz zaman hangi komutları kullanmaları gerektiğini tam olarak açıklayamıyabiliyoruz. İşte tam bu noktada projeye özel komutlat oluşturmak için &lt;code&gt;Makefile&lt;/code&gt; kullanabilirsiniz. &lt;/p&gt;
+&lt;p&gt;Klasörde oluşturacağınız &lt;code&gt;Makefile&lt;/code&gt;(uzantısı yok, ilk harfi büyük) dosyasına &lt;code&gt;serve&lt;/code&gt; komutunu eklediğimizde artık altındaki satırı çalıştıracak.. alttaki satırda yazacağınız komutu başlatmadan önce &lt;code&gt;tab&lt;/code&gt; tuşuna basmanız gerekiyor.&lt;/p&gt;
+&lt;p _="%" endhighlight&gt;{% highlight linux %}
+serve:
+  jekyll serve&lt;/p&gt;
+&lt;h4&gt;Makefile Dosyasını Nasıl Çalıştıracağım ?&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;make&lt;/code&gt; yazıp &lt;code&gt;tab&lt;/code&gt; tuşuna basarsanız &lt;code&gt;Makefile&lt;/code&gt; içerisinde hazırlanmış olan komutu görebilirsiniz. Bu örnekte olduğu gibi &lt;code&gt;make serve&lt;/code&gt; yazdığınızda serve içesidindeki işlemler gerçekleşecektir. Sadece &lt;code&gt;make&lt;/code&gt; yazıp &lt;code&gt;enter&lt;/code&gt; tuşuna bastığınızda ilk komut çalışacaktır. Yine yukardakı örnekte tek komut (serve) olduğu için &lt;code&gt;make serve&lt;/code&gt; komutunu çalıştırmış olacaksınız. &lt;/p&gt;
+&lt;h3&gt;Projenizi Hazırlarken Uyguladığınız Adımları Makefile ile gösterin ;)&lt;/h3&gt;
+&lt;p&gt;Paylaştığınız projenizle ilgili adımları Makefile ile oluşturduğunuzda projenin mantığını daha iyi anlatabileceğinizi düşünüyorum. &lt;/p&gt;
+&lt;h4&gt;Örnek:&lt;/h4&gt;
+&lt;p&gt;{% highlight linux %}
+1-npm-init:
+        npm init&lt;/p&gt;
+&lt;p&gt;2-add-dependencies:
+        npm install webpack --save &amp;amp;&amp;amp; npm install react --save &amp;amp;&amp;amp; npm install react-dom --save &amp;amp;&amp;amp; npm install babel-core --save &amp;amp;$&lt;/p&gt;
+&lt;p&gt;3-create-index:
+        echo '&amp;lt;!DOCTYPE html&amp;gt;'  &amp;gt; index.html
+        echo '&lt;html lang = "en"&gt;'  &amp;gt;&amp;gt; index.html
+        echo '  &lt;head&gt;'  &amp;gt;&amp;gt; index.html
+        echo '    &lt;meta charset = "UTF-8"&gt;'  &amp;gt;&amp;gt; index.html
+        echo '    &lt;title&gt;React App&lt;/title&gt;'  &amp;gt;&amp;gt; index.html
+        echo '  &lt;/head&gt;'  &amp;gt;&amp;gt; index.html
+        echo '&lt;body&gt;'  &amp;gt;&amp;gt; index.html
+        echo '  &lt;div id = "app"&gt;&lt;/div&gt;'  &amp;gt;&amp;gt; index.html
+        echo '  &lt;script src = "index.js"&gt;&lt;/script&gt;'  &amp;gt;&amp;gt; index.html
+        echo '&lt;/body&gt;'  &amp;gt;&amp;gt; index.html
+        echo '&lt;/html&gt;'  &amp;gt;&amp;gt; index.html&lt;/p&gt;
+&lt;p&gt;4-create-appjsx:
+        echo "import React from 'react';" &amp;gt; App.jsx
+        echo "class App extends React.Component {" &amp;gt;&amp;gt; App.jsx
+        echo "   render() {" &amp;gt;&amp;gt; App.jsx
+        echo "" &amp;gt;&amp;gt; App.jsx
+        echo "  var i = 1;" &amp;gt;&amp;gt; App.jsx
+        echo "" &amp;gt;&amp;gt; App.jsx
+        echo "      return (" &amp;gt;&amp;gt; App.jsx
+        echo "         &lt;div&gt;" &amp;gt;&amp;gt; App.jsx
+        echo "            &lt;h1&gt;{i == 1 ? 'True!' : 'False'}&lt;/h1&gt;" &amp;gt;&amp;gt; App.jsx
+        echo "            Hello World!!!" &amp;gt;&amp;gt; App.jsx
+        echo "         &lt;/div&gt;" &amp;gt;&amp;gt; App.jsx
+        echo "      );" &amp;gt;&amp;gt; App.jsx
+        echo "   }" &amp;gt;&amp;gt; App.jsx
+        echo "}" &amp;gt;&amp;gt; App.jsx
+        echo "export default App;" &amp;gt;&amp;gt; App.jsx&lt;/p&gt;
+&lt;p&gt;5-create-mainjs:
+        echo "import React from 'react';" &amp;gt; main.js
+        echo "import ReactDOM from 'react-dom';" &amp;gt;&amp;gt; main.js
+        echo "import App from './App.jsx';" &amp;gt;&amp;gt; main.js
+        echo "ReactDOM.render(&lt;App /&gt;, document.getElementById('app'));" &amp;gt;&amp;gt; main.js&lt;/p&gt;
+&lt;p&gt;6-OR-Create-All-Files: 3-create-index 4-create-appjsx 5-create-mainjs&lt;/p&gt;
+&lt;p&gt;7-OR-Create-Empty-Files:
+        touch index.html &amp;amp;&amp;amp; touch App.jsx &amp;amp;&amp;amp; touch main.js &amp;amp;&amp;amp; touch webpack.config.js&lt;/p&gt;
+&lt;p&gt;10-start:
+        npm start&lt;/p&gt;
+&lt;p&gt;{% endhighlight %}&lt;/p&gt;
+&lt;p&gt;Makefile oluşturmak için tutorial : &lt;a href="http://mrbook.org/blog/tutorials/make/"&gt;makefile-tutorial&lt;/a&gt;&lt;/p&gt;</content><category term="['linux'"></category><category term="'makefile']"></category></entry><entry><title>Markdown İle Çalışmak</title><link href="https://hakanyalcinkaya.github.io/markdown-ile-calismak.html" rel="alternate"></link><published>2010-12-03T10:20:00+01:00</published><updated>2010-12-03T10:20:00+01:00</updated><author><name>Hakan Yalçınkaya</name></author><id>tag:hakanyalcinkaya.github.io,2010-12-03:/markdown-ile-calismak.html</id><summary type="html">&lt;p&gt;Markdown'un sitesinde derki :&lt;/p&gt;
+&lt;p&gt;Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).&lt;/p&gt;
+&lt;p&gt;Yani :) Markdown sayesinde normal yazıdan HTML işaretleme diline yazılarınızı rahatça dönüştürebilirsiniz. Markdown size daha kolay okunabilir, yazılabilir …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Markdown'un sitesinde derki :&lt;/p&gt;
+&lt;p&gt;Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).&lt;/p&gt;
+&lt;p&gt;Yani :) Markdown sayesinde normal yazıdan HTML işaretleme diline yazılarınızı rahatça dönüştürebilirsiniz. Markdown size daha kolay okunabilir, yazılabilir ve hemen HTML'e çevrilebilir bir yapı sunmaktadır. Tabi ki sadece HTML değil, kullandığınız uygulamaların opsiyonlarına göz atacak olursanız PDF, DOC, TXT gibi birçok döküman biçimine de Markdown'u kolaylıkla dönüştürebileceğinizi görebilirsiniz.&lt;/p&gt;
+&lt;p&gt;Daha önce &lt;strong&gt;GitBook&lt;/strong&gt; içerisinde hazırladığım &lt;a href="https://hakanyalcinkaya.gitbooks.io/markdown/content/genel_bakis.html"&gt;Markdown Klavuzuna ulaşmak için tıklayın..&lt;/a&gt;&lt;/p&gt;</content><category term="['markdown']"></category></entry><entry><title>Neden Mac OS Kullanıyorum</title><link href="https://hakanyalcinkaya.github.io/neden-mac-os-kullaniyorum.html" rel="alternate"></link><published>2010-12-03T10:20:00+01:00</published><updated>2010-12-03T10:20:00+01:00</updated><author><name>Hakan Yalçınkaya</name></author><id>tag:hakanyalcinkaya.github.io,2010-12-03:/neden-mac-os-kullaniyorum.html</id><summary type="html">&lt;p&gt;Mac kullanmaya başlamanadan önce, Mac kullanıcılarını gözlemlediğimde dizüstü bilgisayarlarının ekranlarını kapatıp çantalarına öylece koyduklarını, hiçbir dosyayı kaydetmediklerini görüyordum. &lt;code&gt;Bilgisayarını neden kapatmıyorsun&lt;/code&gt; diye sorduğumda da &lt;code&gt;ekranını kapattım ya daha ne yapmalıyım ki&lt;/code&gt; diye cevaplar duyuyordum ve bu bana çok garip geliyordu. &lt;/p&gt;
+&lt;p&gt;Peki Windows işletim sistemi kullanan bir dizüstü bilgisayar kullandığınızda bu …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Mac kullanmaya başlamanadan önce, Mac kullanıcılarını gözlemlediğimde dizüstü bilgisayarlarının ekranlarını kapatıp çantalarına öylece koyduklarını, hiçbir dosyayı kaydetmediklerini görüyordum. &lt;code&gt;Bilgisayarını neden kapatmıyorsun&lt;/code&gt; diye sorduğumda da &lt;code&gt;ekranını kapattım ya daha ne yapmalıyım ki&lt;/code&gt; diye cevaplar duyuyordum ve bu bana çok garip geliyordu. &lt;/p&gt;
+&lt;p&gt;Peki Windows işletim sistemi kullanan bir dizüstü bilgisayar kullandığınızda bu işlemi yaparsanız ne olur ? çökebilir, dosyalarınız kaybolabilir, ekranını açtığınızda bi daha açılmayabilir. Peki bunları yaşadığınızda ne düşünüyorsunuz ? hmm bu işletim sisteminde bi yerlerde kapat işlemi vardı.. bunu yapmalıyım.. Yani deneyimleriniz o işletim sistemini daha düzgün kullanmanızı, bazen yapabileceklerinden korktuğunuz için ona iyi bakmanızı istiyor :)) registry şişti, bana format at diyor.. Mac Os kullanan birisi daha bilgisayarını kapatmayı bilmiyorken Windows işletim sistemi kullanan herkes format atmayı öğrenmiş oluyor.. &lt;/p&gt;
+&lt;p&gt;İşte tam bu noktada bu yazıyı okuyan Developer bu konuların onunla alakası olmadığını düşünerek gülümsüyor :)&lt;/p&gt;
+&lt;p&gt;Tamam, anlıyorum. Yıllarca Ms DOS var olduğu zamandan bu yana Microsoft ürünleri kullanan birisi olarak şunu söyleyebilirim; zaten o kadar zor şeylerle uğraşırken bana naz yapan ikidebir bana uyarı mesajları çıkaran, hangi programdan dolayı hangi sistemin çalışmadığını anlayamadığım bir geliştirme ortamıyla uğraşarak zaman kaybetmek bana göre değil..&lt;/p&gt;
+&lt;p&gt;Ayrıca BSD altyapısı sayesinde Unix/Linux işletim sistemlerine bir adım daha yakın olduğunuzu ve kullandığınız birçok komutun aynı şekilde çalıştığını düşünecek olursanız, &lt;a href="https://www.iterm2.com/"&gt;iTerm&lt;/a&gt; içinde &lt;a href="https://github.com/robbyrussell/oh-my-zsh"&gt;oh-my-zsh&lt;/a&gt; ile oluşturduğunuz güzel çalışma ortamından sonra Windows ile çalışmak size biraz zor gelebilir ;)&lt;/p&gt;</content><category term="['mac']"></category></entry></feed>
