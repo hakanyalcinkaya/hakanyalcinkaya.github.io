@@ -103,17 +103,11 @@
 <li>Artık test edebilirsiniz ;)</li>
 </ol>
 <h3>Django Shell Test:</h3>
-<p>{% highlight python %}</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p _="%" endhighlight>from django.contrib.gis.geoip2 import GeoIP2
-g = GeoIP2()
-g.city('78.188.177.1')
-{'city': u'Istanbul', 'postal_code': None, 'longitude': 28.9684, 'country_code': u'TR', 'latitude': 41.0214, 'country_name': u'Turkey', 'region': u'34', 'dma_code': None}</p>
-</blockquote>
-</blockquote>
-</blockquote>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">django.contrib.gis.geoip2</span> <span class="kn">import</span> <span class="n">GeoIP2</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">g</span> <span class="o">=</span> <span class="n">GeoIP2</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">g</span><span class="o">.</span><span class="n">city</span><span class="p">(</span><span class="s1">&#39;78.188.177.1&#39;</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">{</span><span class="s1">&#39;city&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;Istanbul&#39;</span><span class="p">,</span> <span class="s1">&#39;postal_code&#39;</span><span class="p">:</span> <span class="bp">None</span><span class="p">,</span> <span class="s1">&#39;longitude&#39;</span><span class="p">:</span> <span class="mf">28.9684</span><span class="p">,</span> <span class="s1">&#39;country_code&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;TR&#39;</span><span class="p">,</span> <span class="s1">&#39;latitude&#39;</span><span class="p">:</span> <span class="mf">41.0214</span><span class="p">,</span> <span class="s1">&#39;country_name&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;Turkey&#39;</span><span class="p">,</span> <span class="s1">&#39;region&#39;</span><span class="p">:</span> <span class="sa">u</span><span class="s1">&#39;34&#39;</span><span class="p">,</span> <span class="s1">&#39;dma_code&#39;</span><span class="p">:</span> <span class="bp">None</span><span class="p">}</span>
+</pre></div>
             </div>
             <div class="post_list">
                 <span>By </span>
