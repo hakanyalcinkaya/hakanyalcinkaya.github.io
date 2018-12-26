@@ -80,7 +80,6 @@
                 <li><a href="http://getpelican.com/">Pelican</a></li>
                 <li><a href="http://python.org/">Python.org</a></li>
                 <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                <li><a href="#">You can modify those links in your config file</a></li>
         </ul>
 
 </aside>
@@ -88,64 +87,75 @@
 <!-- Content -->
 <article>
     <section id="content">
+        <a href="https://hakanyalcinkaya.github.io">Ana Sayfa</a>    
         <article>
             <h2 class="post_title post_detail"><a href="https://hakanyalcinkaya.github.io/makefile-kullanin.html" rel="bookmark"
                                                   title="Permalink to Makefile Kullanın">Makefile Kullanın</a></h2>
             <div class="entry-content blog-post">
                 <p>Bazen kullandığımız komutları unutuyoruz ve her projede farklı farklı komutlar çalıştırmamız gerekebiliyor.. veya dosyaları başkalarına göndereceğimiz zaman hangi komutları kullanmaları gerektiğini tam olarak açıklayamıyabiliyoruz. İşte tam bu noktada projeye özel komutlat oluşturmak için <code>Makefile</code> kullanabilirsiniz. </p>
 <p>Klasörde oluşturacağınız <code>Makefile</code>(uzantısı yok, ilk harfi büyük) dosyasına <code>serve</code> komutunu eklediğimizde artık altındaki satırı çalıştıracak.. alttaki satırda yazacağınız komutu başlatmadan önce <code>tab</code> tuşuna basmanız gerekiyor.</p>
-<p _="%" endhighlight>{% highlight linux %}
-serve:
-  jekyll serve</p>
+<div class="highlight"><pre><span></span><span class="n">serve</span><span class="o">:</span>
+  <span class="n">jekyll</span> <span class="n">serve</span>
+</pre></div>
+
+
 <h4>Makefile Dosyasını Nasıl Çalıştıracağım ?</h4>
 <p><code>make</code> yazıp <code>tab</code> tuşuna basarsanız <code>Makefile</code> içerisinde hazırlanmış olan komutu görebilirsiniz. Bu örnekte olduğu gibi <code>make serve</code> yazdığınızda serve içesidindeki işlemler gerçekleşecektir. Sadece <code>make</code> yazıp <code>enter</code> tuşuna bastığınızda ilk komut çalışacaktır. Yine yukardakı örnekte tek komut (serve) olduğu için <code>make serve</code> komutunu çalıştırmış olacaksınız. </p>
 <h3>Projenizi Hazırlarken Uyguladığınız Adımları Makefile ile gösterin ;)</h3>
 <p>Paylaştığınız projenizle ilgili adımları Makefile ile oluşturduğunuzda projenin mantığını daha iyi anlatabileceğinizi düşünüyorum. </p>
 <h4>Örnek:</h4>
-<p>{% highlight linux %}
-1-npm-init:
-        npm init</p>
-<p>2-add-dependencies:
-        npm install webpack --save &amp;&amp; npm install react --save &amp;&amp; npm install react-dom --save &amp;&amp; npm install babel-core --save &amp;$</p>
-<p>3-create-index:
-        echo '&lt;!DOCTYPE html&gt;'  &gt; index.html
-        echo '<html lang = "en">'  &gt;&gt; index.html
-        echo '  <head>'  &gt;&gt; index.html
-        echo '    <meta charset = "UTF-8">'  &gt;&gt; index.html
-        echo '    <title>React App</title>'  &gt;&gt; index.html
-        echo '  </head>'  &gt;&gt; index.html
-        echo '<body>'  &gt;&gt; index.html
-        echo '  <div id = "app"></div>'  &gt;&gt; index.html
-        echo '  <script src = "index.js"></script>'  &gt;&gt; index.html
-        echo '</body>'  &gt;&gt; index.html
-        echo '</html>'  &gt;&gt; index.html</p>
-<p>4-create-appjsx:
-        echo "import React from 'react';" &gt; App.jsx
-        echo "class App extends React.Component {" &gt;&gt; App.jsx
-        echo "   render() {" &gt;&gt; App.jsx
-        echo "" &gt;&gt; App.jsx
-        echo "  var i = 1;" &gt;&gt; App.jsx
-        echo "" &gt;&gt; App.jsx
-        echo "      return (" &gt;&gt; App.jsx
-        echo "         <div>" &gt;&gt; App.jsx
-        echo "            <h1>{i == 1 ? 'True!' : 'False'}</h1>" &gt;&gt; App.jsx
-        echo "            Hello World!!!" &gt;&gt; App.jsx
-        echo "         </div>" &gt;&gt; App.jsx
-        echo "      );" &gt;&gt; App.jsx
-        echo "   }" &gt;&gt; App.jsx
-        echo "}" &gt;&gt; App.jsx
-        echo "export default App;" &gt;&gt; App.jsx</p>
-<p>5-create-mainjs:
-        echo "import React from 'react';" &gt; main.js
-        echo "import ReactDOM from 'react-dom';" &gt;&gt; main.js
-        echo "import App from './App.jsx';" &gt;&gt; main.js
-        echo "ReactDOM.render(<App />, document.getElementById('app'));" &gt;&gt; main.js</p>
-<p>6-OR-Create-All-Files: 3-create-index 4-create-appjsx 5-create-mainjs</p>
-<p>7-OR-Create-Empty-Files:
-        touch index.html &amp;&amp; touch App.jsx &amp;&amp; touch main.js &amp;&amp; touch webpack.config.js</p>
-<p>10-start:
-        npm start</p>
-<p>{% endhighlight %}</p>
+<div class="highlight"><pre><span></span><span class="mi">1</span><span class="o">-</span><span class="n">npm</span><span class="o">-</span><span class="n">init</span><span class="p">:</span>
+        <span class="n">npm</span> <span class="n">init</span>
+
+<span class="mi">2</span><span class="o">-</span><span class="n">add</span><span class="o">-</span><span class="n">dependencies</span><span class="p">:</span>
+        <span class="n">npm</span> <span class="n">install</span> <span class="n">webpack</span> <span class="o">--</span><span class="n">save</span> <span class="o">&amp;&amp;</span> <span class="n">npm</span> <span class="n">install</span> <span class="n">react</span> <span class="o">--</span><span class="n">save</span> <span class="o">&amp;&amp;</span> <span class="n">npm</span> <span class="n">install</span> <span class="n">react</span><span class="o">-</span><span class="n">dom</span> <span class="o">--</span><span class="n">save</span> <span class="o">&amp;&amp;</span> <span class="n">npm</span> <span class="n">install</span> <span class="n">babel</span><span class="o">-</span><span class="n">core</span> <span class="o">--</span><span class="n">save</span> <span class="o">&amp;</span><span class="err">$</span>
+
+<span class="mi">3</span><span class="o">-</span><span class="n">create</span><span class="o">-</span><span class="n">index</span><span class="p">:</span>
+        <span class="n">echo</span> <span class="s1">&#39;&lt;!DOCTYPE html&gt;&#39;</span>  <span class="o">&gt;</span> <span class="n">index</span><span class="o">.</span><span class="n">html</span>
+        <span class="n">echo</span> <span class="s1">&#39;&lt;html lang = &quot;en&quot;&gt;&#39;</span>  <span class="o">&gt;&gt;</span> <span class="n">index</span><span class="o">.</span><span class="n">html</span>
+        <span class="n">echo</span> <span class="s1">&#39;  &lt;head&gt;&#39;</span>  <span class="o">&gt;&gt;</span> <span class="n">index</span><span class="o">.</span><span class="n">html</span>
+        <span class="n">echo</span> <span class="s1">&#39;    &lt;meta charset = &quot;UTF-8&quot;&gt;&#39;</span>  <span class="o">&gt;&gt;</span> <span class="n">index</span><span class="o">.</span><span class="n">html</span>
+        <span class="n">echo</span> <span class="s1">&#39;    &lt;title&gt;React App&lt;/title&gt;&#39;</span>  <span class="o">&gt;&gt;</span> <span class="n">index</span><span class="o">.</span><span class="n">html</span>
+        <span class="n">echo</span> <span class="s1">&#39;  &lt;/head&gt;&#39;</span>  <span class="o">&gt;&gt;</span> <span class="n">index</span><span class="o">.</span><span class="n">html</span>
+        <span class="n">echo</span> <span class="s1">&#39;&lt;body&gt;&#39;</span>  <span class="o">&gt;&gt;</span> <span class="n">index</span><span class="o">.</span><span class="n">html</span>
+        <span class="n">echo</span> <span class="s1">&#39;  &lt;div id = &quot;app&quot;&gt;&lt;/div&gt;&#39;</span>  <span class="o">&gt;&gt;</span> <span class="n">index</span><span class="o">.</span><span class="n">html</span>
+        <span class="n">echo</span> <span class="s1">&#39;  &lt;script src = &quot;index.js&quot;&gt;&lt;/script&gt;&#39;</span>  <span class="o">&gt;&gt;</span> <span class="n">index</span><span class="o">.</span><span class="n">html</span>
+        <span class="n">echo</span> <span class="s1">&#39;&lt;/body&gt;&#39;</span>  <span class="o">&gt;&gt;</span> <span class="n">index</span><span class="o">.</span><span class="n">html</span>
+        <span class="n">echo</span> <span class="s1">&#39;&lt;/html&gt;&#39;</span>  <span class="o">&gt;&gt;</span> <span class="n">index</span><span class="o">.</span><span class="n">html</span>
+
+<span class="mi">4</span><span class="o">-</span><span class="n">create</span><span class="o">-</span><span class="n">appjsx</span><span class="p">:</span>
+        <span class="n">echo</span> <span class="s2">&quot;import React from &#39;react&#39;;&quot;</span> <span class="o">&gt;</span> <span class="n">App</span><span class="o">.</span><span class="n">jsx</span>
+        <span class="n">echo</span> <span class="s2">&quot;class App extends React.Component {&quot;</span> <span class="o">&gt;&gt;</span> <span class="n">App</span><span class="o">.</span><span class="n">jsx</span>
+        <span class="n">echo</span> <span class="s2">&quot;   render() {&quot;</span> <span class="o">&gt;&gt;</span> <span class="n">App</span><span class="o">.</span><span class="n">jsx</span>
+        <span class="n">echo</span> <span class="s2">&quot;&quot;</span> <span class="o">&gt;&gt;</span> <span class="n">App</span><span class="o">.</span><span class="n">jsx</span>
+        <span class="n">echo</span> <span class="s2">&quot;  var i = 1;&quot;</span> <span class="o">&gt;&gt;</span> <span class="n">App</span><span class="o">.</span><span class="n">jsx</span>
+        <span class="n">echo</span> <span class="s2">&quot;&quot;</span> <span class="o">&gt;&gt;</span> <span class="n">App</span><span class="o">.</span><span class="n">jsx</span>
+        <span class="n">echo</span> <span class="s2">&quot;      return (&quot;</span> <span class="o">&gt;&gt;</span> <span class="n">App</span><span class="o">.</span><span class="n">jsx</span>
+        <span class="n">echo</span> <span class="s2">&quot;         &lt;div&gt;&quot;</span> <span class="o">&gt;&gt;</span> <span class="n">App</span><span class="o">.</span><span class="n">jsx</span>
+        <span class="n">echo</span> <span class="s2">&quot;            &lt;h1&gt;{i == 1 ? &#39;True!&#39; : &#39;False&#39;}&lt;/h1&gt;&quot;</span> <span class="o">&gt;&gt;</span> <span class="n">App</span><span class="o">.</span><span class="n">jsx</span>
+        <span class="n">echo</span> <span class="s2">&quot;            Hello World!!!&quot;</span> <span class="o">&gt;&gt;</span> <span class="n">App</span><span class="o">.</span><span class="n">jsx</span>
+        <span class="n">echo</span> <span class="s2">&quot;         &lt;/div&gt;&quot;</span> <span class="o">&gt;&gt;</span> <span class="n">App</span><span class="o">.</span><span class="n">jsx</span>
+        <span class="n">echo</span> <span class="s2">&quot;      );&quot;</span> <span class="o">&gt;&gt;</span> <span class="n">App</span><span class="o">.</span><span class="n">jsx</span>
+        <span class="n">echo</span> <span class="s2">&quot;   }&quot;</span> <span class="o">&gt;&gt;</span> <span class="n">App</span><span class="o">.</span><span class="n">jsx</span>
+        <span class="n">echo</span> <span class="s2">&quot;}&quot;</span> <span class="o">&gt;&gt;</span> <span class="n">App</span><span class="o">.</span><span class="n">jsx</span>
+        <span class="n">echo</span> <span class="s2">&quot;export default App;&quot;</span> <span class="o">&gt;&gt;</span> <span class="n">App</span><span class="o">.</span><span class="n">jsx</span>
+
+<span class="mi">5</span><span class="o">-</span><span class="n">create</span><span class="o">-</span><span class="n">mainjs</span><span class="p">:</span>
+        <span class="n">echo</span> <span class="s2">&quot;import React from &#39;react&#39;;&quot;</span> <span class="o">&gt;</span> <span class="n">main</span><span class="o">.</span><span class="n">js</span>
+        <span class="n">echo</span> <span class="s2">&quot;import ReactDOM from &#39;react-dom&#39;;&quot;</span> <span class="o">&gt;&gt;</span> <span class="n">main</span><span class="o">.</span><span class="n">js</span>
+        <span class="n">echo</span> <span class="s2">&quot;import App from &#39;./App.jsx&#39;;&quot;</span> <span class="o">&gt;&gt;</span> <span class="n">main</span><span class="o">.</span><span class="n">js</span>
+        <span class="n">echo</span> <span class="s2">&quot;ReactDOM.render(&lt;App /&gt;, document.getElementById(&#39;app&#39;));&quot;</span> <span class="o">&gt;&gt;</span> <span class="n">main</span><span class="o">.</span><span class="n">js</span>
+
+<span class="mi">6</span><span class="o">-</span><span class="n">OR</span><span class="o">-</span><span class="n">Create</span><span class="o">-</span><span class="n">All</span><span class="o">-</span><span class="n">Files</span><span class="p">:</span> <span class="mi">3</span><span class="o">-</span><span class="n">create</span><span class="o">-</span><span class="n">index</span> <span class="mi">4</span><span class="o">-</span><span class="n">create</span><span class="o">-</span><span class="n">appjsx</span> <span class="mi">5</span><span class="o">-</span><span class="n">create</span><span class="o">-</span><span class="n">mainjs</span>
+
+<span class="mi">7</span><span class="o">-</span><span class="n">OR</span><span class="o">-</span><span class="n">Create</span><span class="o">-</span><span class="n">Empty</span><span class="o">-</span><span class="n">Files</span><span class="p">:</span>
+        <span class="n">touch</span> <span class="n">index</span><span class="o">.</span><span class="n">html</span> <span class="o">&amp;&amp;</span> <span class="n">touch</span> <span class="n">App</span><span class="o">.</span><span class="n">jsx</span> <span class="o">&amp;&amp;</span> <span class="n">touch</span> <span class="n">main</span><span class="o">.</span><span class="n">js</span> <span class="o">&amp;&amp;</span> <span class="n">touch</span> <span class="n">webpack</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">js</span>
+
+<span class="mi">10</span><span class="o">-</span><span class="n">start</span><span class="p">:</span>
+        <span class="n">npm</span> <span class="n">start</span>
+</pre></div>
+
+
 <p>Makefile oluşturmak için tutorial : <a href="http://mrbook.org/blog/tutorials/make/">makefile-tutorial</a></p>
             </div>
             <div class="post_list">

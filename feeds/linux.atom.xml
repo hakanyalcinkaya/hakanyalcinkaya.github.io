@@ -2,56 +2,66 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Hakan Yalçınkaya - Linux</title><link href="https://hakanyalcinkaya.github.io/" rel="alternate"></link><link href="https://hakanyalcinkaya.github.io/feeds/linux.atom.xml" rel="self"></link><id>https://hakanyalcinkaya.github.io/</id><updated>2010-12-03T10:20:00+01:00</updated><entry><title>Makefile Kullanın</title><link href="https://hakanyalcinkaya.github.io/makefile-kullanin.html" rel="alternate"></link><published>2010-12-03T10:20:00+01:00</published><updated>2010-12-03T10:20:00+01:00</updated><author><name>Hakan Yalçınkaya</name></author><id>tag:hakanyalcinkaya.github.io,2010-12-03:/makefile-kullanin.html</id><summary type="html">&lt;p&gt;Bazen kullandığımız komutları unutuyoruz ve her projede farklı farklı komutlar çalıştırmamız gerekebiliyor.. veya dosyaları başkalarına göndereceğimiz zaman hangi komutları kullanmaları gerektiğini tam olarak açıklayamıyabiliyoruz. İşte tam bu noktada projeye özel komutlat oluşturmak için &lt;code&gt;Makefile&lt;/code&gt; kullanabilirsiniz. &lt;/p&gt;
 &lt;p&gt;Klasörde oluşturacağınız &lt;code&gt;Makefile&lt;/code&gt;(uzantısı yok, ilk harfi büyük) dosyasına &lt;code&gt;serve&lt;/code&gt; komutunu eklediğimizde artık altındaki satırı …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Bazen kullandığımız komutları unutuyoruz ve her projede farklı farklı komutlar çalıştırmamız gerekebiliyor.. veya dosyaları başkalarına göndereceğimiz zaman hangi komutları kullanmaları gerektiğini tam olarak açıklayamıyabiliyoruz. İşte tam bu noktada projeye özel komutlat oluşturmak için &lt;code&gt;Makefile&lt;/code&gt; kullanabilirsiniz. &lt;/p&gt;
 &lt;p&gt;Klasörde oluşturacağınız &lt;code&gt;Makefile&lt;/code&gt;(uzantısı yok, ilk harfi büyük) dosyasına &lt;code&gt;serve&lt;/code&gt; komutunu eklediğimizde artık altındaki satırı çalıştıracak.. alttaki satırda yazacağınız komutu başlatmadan önce &lt;code&gt;tab&lt;/code&gt; tuşuna basmanız gerekiyor.&lt;/p&gt;
-&lt;p _="%" endhighlight&gt;{% highlight linux %}
-serve:
-  jekyll serve&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;serve&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+  &lt;span class="n"&gt;jekyll&lt;/span&gt; &lt;span class="n"&gt;serve&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h4&gt;Makefile Dosyasını Nasıl Çalıştıracağım ?&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;make&lt;/code&gt; yazıp &lt;code&gt;tab&lt;/code&gt; tuşuna basarsanız &lt;code&gt;Makefile&lt;/code&gt; içerisinde hazırlanmış olan komutu görebilirsiniz. Bu örnekte olduğu gibi &lt;code&gt;make serve&lt;/code&gt; yazdığınızda serve içesidindeki işlemler gerçekleşecektir. Sadece &lt;code&gt;make&lt;/code&gt; yazıp &lt;code&gt;enter&lt;/code&gt; tuşuna bastığınızda ilk komut çalışacaktır. Yine yukardakı örnekte tek komut (serve) olduğu için &lt;code&gt;make serve&lt;/code&gt; komutunu çalıştırmış olacaksınız. &lt;/p&gt;
 &lt;h3&gt;Projenizi Hazırlarken Uyguladığınız Adımları Makefile ile gösterin ;)&lt;/h3&gt;
 &lt;p&gt;Paylaştığınız projenizle ilgili adımları Makefile ile oluşturduğunuzda projenin mantığını daha iyi anlatabileceğinizi düşünüyorum. &lt;/p&gt;
 &lt;h4&gt;Örnek:&lt;/h4&gt;
-&lt;p&gt;{% highlight linux %}
-1-npm-init:
-        npm init&lt;/p&gt;
-&lt;p&gt;2-add-dependencies:
-        npm install webpack --save &amp;amp;&amp;amp; npm install react --save &amp;amp;&amp;amp; npm install react-dom --save &amp;amp;&amp;amp; npm install babel-core --save &amp;amp;$&lt;/p&gt;
-&lt;p&gt;3-create-index:
-        echo '&amp;lt;!DOCTYPE html&amp;gt;'  &amp;gt; index.html
-        echo '&lt;html lang = "en"&gt;'  &amp;gt;&amp;gt; index.html
-        echo '  &lt;head&gt;'  &amp;gt;&amp;gt; index.html
-        echo '    &lt;meta charset = "UTF-8"&gt;'  &amp;gt;&amp;gt; index.html
-        echo '    &lt;title&gt;React App&lt;/title&gt;'  &amp;gt;&amp;gt; index.html
-        echo '  &lt;/head&gt;'  &amp;gt;&amp;gt; index.html
-        echo '&lt;body&gt;'  &amp;gt;&amp;gt; index.html
-        echo '  &lt;div id = "app"&gt;&lt;/div&gt;'  &amp;gt;&amp;gt; index.html
-        echo '  &lt;script src = "index.js"&gt;&lt;/script&gt;'  &amp;gt;&amp;gt; index.html
-        echo '&lt;/body&gt;'  &amp;gt;&amp;gt; index.html
-        echo '&lt;/html&gt;'  &amp;gt;&amp;gt; index.html&lt;/p&gt;
-&lt;p&gt;4-create-appjsx:
-        echo "import React from 'react';" &amp;gt; App.jsx
-        echo "class App extends React.Component {" &amp;gt;&amp;gt; App.jsx
-        echo "   render() {" &amp;gt;&amp;gt; App.jsx
-        echo "" &amp;gt;&amp;gt; App.jsx
-        echo "  var i = 1;" &amp;gt;&amp;gt; App.jsx
-        echo "" &amp;gt;&amp;gt; App.jsx
-        echo "      return (" &amp;gt;&amp;gt; App.jsx
-        echo "         &lt;div&gt;" &amp;gt;&amp;gt; App.jsx
-        echo "            &lt;h1&gt;{i == 1 ? 'True!' : 'False'}&lt;/h1&gt;" &amp;gt;&amp;gt; App.jsx
-        echo "            Hello World!!!" &amp;gt;&amp;gt; App.jsx
-        echo "         &lt;/div&gt;" &amp;gt;&amp;gt; App.jsx
-        echo "      );" &amp;gt;&amp;gt; App.jsx
-        echo "   }" &amp;gt;&amp;gt; App.jsx
-        echo "}" &amp;gt;&amp;gt; App.jsx
-        echo "export default App;" &amp;gt;&amp;gt; App.jsx&lt;/p&gt;
-&lt;p&gt;5-create-mainjs:
-        echo "import React from 'react';" &amp;gt; main.js
-        echo "import ReactDOM from 'react-dom';" &amp;gt;&amp;gt; main.js
-        echo "import App from './App.jsx';" &amp;gt;&amp;gt; main.js
-        echo "ReactDOM.render(&lt;App /&gt;, document.getElementById('app'));" &amp;gt;&amp;gt; main.js&lt;/p&gt;
-&lt;p&gt;6-OR-Create-All-Files: 3-create-index 4-create-appjsx 5-create-mainjs&lt;/p&gt;
-&lt;p&gt;7-OR-Create-Empty-Files:
-        touch index.html &amp;amp;&amp;amp; touch App.jsx &amp;amp;&amp;amp; touch main.js &amp;amp;&amp;amp; touch webpack.config.js&lt;/p&gt;
-&lt;p&gt;10-start:
-        npm start&lt;/p&gt;
-&lt;p&gt;{% endhighlight %}&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;npm&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;init&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;npm&lt;/span&gt; &lt;span class="n"&gt;init&lt;/span&gt;
+
+&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;add&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dependencies&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;npm&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;webpack&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;save&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="n"&gt;npm&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;react&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;save&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="n"&gt;npm&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;react&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dom&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;save&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="n"&gt;npm&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;babel&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;core&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;save&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;
+
+&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;create&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;lt;!DOCTYPE html&amp;gt;&amp;#39;&lt;/span&gt;  &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;lt;html lang = &amp;quot;en&amp;quot;&amp;gt;&amp;#39;&lt;/span&gt;  &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;  &amp;lt;head&amp;gt;&amp;#39;&lt;/span&gt;  &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;    &amp;lt;meta charset = &amp;quot;UTF-8&amp;quot;&amp;gt;&amp;#39;&lt;/span&gt;  &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;    &amp;lt;title&amp;gt;React App&amp;lt;/title&amp;gt;&amp;#39;&lt;/span&gt;  &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;  &amp;lt;/head&amp;gt;&amp;#39;&lt;/span&gt;  &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;lt;body&amp;gt;&amp;#39;&lt;/span&gt;  &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;  &amp;lt;div id = &amp;quot;app&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;#39;&lt;/span&gt;  &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;  &amp;lt;script src = &amp;quot;index.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&amp;#39;&lt;/span&gt;  &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;lt;/body&amp;gt;&amp;#39;&lt;/span&gt;  &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;lt;/html&amp;gt;&amp;#39;&lt;/span&gt;  &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;
+
+&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;create&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;appjsx&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;import React from &amp;#39;react&amp;#39;;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;App&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;jsx&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;class App extends React.Component {&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;App&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;jsx&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;   render() {&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;App&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;jsx&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;App&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;jsx&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;  var i = 1;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;App&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;jsx&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;App&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;jsx&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;      return (&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;App&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;jsx&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;         &amp;lt;div&amp;gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;App&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;jsx&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;            &amp;lt;h1&amp;gt;{i == 1 ? &amp;#39;True!&amp;#39; : &amp;#39;False&amp;#39;}&amp;lt;/h1&amp;gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;App&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;jsx&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;            Hello World!!!&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;App&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;jsx&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;         &amp;lt;/div&amp;gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;App&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;jsx&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;      );&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;App&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;jsx&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;   }&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;App&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;jsx&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;}&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;App&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;jsx&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;export default App;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;App&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;jsx&lt;/span&gt;
+
+&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;create&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;mainjs&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;import React from &amp;#39;react&amp;#39;;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;js&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;import ReactDOM from &amp;#39;react-dom&amp;#39;;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;js&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;import App from &amp;#39;./App.jsx&amp;#39;;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;js&lt;/span&gt;
+        &lt;span class="n"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;ReactDOM.render(&amp;lt;App /&amp;gt;, document.getElementById(&amp;#39;app&amp;#39;));&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;js&lt;/span&gt;
+
+&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;OR&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Create&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;All&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Files&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;create&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;create&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;appjsx&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;create&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;mainjs&lt;/span&gt;
+
+&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;OR&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Create&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Empty&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Files&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;touch&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="n"&gt;touch&lt;/span&gt; &lt;span class="n"&gt;App&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;jsx&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="n"&gt;touch&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;js&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="n"&gt;touch&lt;/span&gt; &lt;span class="n"&gt;webpack&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;js&lt;/span&gt;
+
+&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;start&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;npm&lt;/span&gt; &lt;span class="n"&gt;start&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Makefile oluşturmak için tutorial : &lt;a href="http://mrbook.org/blog/tutorials/make/"&gt;makefile-tutorial&lt;/a&gt;&lt;/p&gt;</content><category term="['linux'"></category><category term="'makefile']"></category></entry></feed>
