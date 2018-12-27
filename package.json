@@ -1,0 +1,33 @@
+{
+  "name": "hakanyalcinkaya",
+  "version": "1.0.0",
+  "description": "Hakan Yalcinkaya Blog",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hakanyalcinkaya/hakanyalcinkaya.github.io.git"
+  },
+  "keywords": [
+    "Hakan",
+    "Yalcinkaya",
+    "Blog",
+    "Django",
+    "Python",
+    "JavaScript",
+    "Vue",
+    "React"
+  ],
+  "author": "Hakan Yalcinkaya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hakanyalcinkaya/hakanyalcinkaya.github.io/issues"
+  },
+  "homepage": "https://github.com/hakanyalcinkaya/hakanyalcinkaya.github.io#readme"
+}
