@@ -29,5 +29,11 @@
   "bugs": {
     "url": "https://github.com/hakanyalcinkaya/hakanyalcinkaya.github.io/issues"
   },
-  "homepage": "https://github.com/hakanyalcinkaya/hakanyalcinkaya.github.io#readme"
+  "homepage": "https://github.com/hakanyalcinkaya/hakanyalcinkaya.github.io#readme",
+  "devDependencies": {
+    "@vuepress/plugin-blog": "^1.0.0-alpha.0"
+  },
+  "dependencies": {
+    "vue-moment": "^4.0.0"
+  }
 }
