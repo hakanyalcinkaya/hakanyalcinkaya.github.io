@@ -8,6 +8,8 @@ tags: ['Python']
 
 # Python ve Kod Yazma Sanatı
 
+![Python](./img/python.png)
+
 Python yazılım dili ilgili birçok övgü dolu yazıyı siz de okumuşsunuzdur. "Harika bir dil, yazması çok kolay, okunması çok kolay ve hızlı.." gibi görüşleri sıklıkla duyarız. Python dilinin geliştirdiği güzel özelliklerden biri ise bu görüşleri doğrulayan güzel kod yazma sanatıdır diyebiliriz.
 
 *"Kodu çalıştırdığımda hata vermiyorsa sorun yoktur.."* Yazılım geliştirmeye başladığımızda kullandığımız ilk yapı genelde budur ve uzunca bir süre bu yarzımızı değiştirmeden yazılımlarımızı geliştirmeye devam ederiz. Yazdığımız kodu 3 ay sonra okumaya çalıştığımızda eğer x, y, z, i gibi değişkenler(variables) görüyorsak ve bu değişkenlerin ne olduğunu anlamakla vakit kaybetmeye başladıysak bir şeylerin değişmesinin zamanı gelmiştir. İşte bu noktada düzgün değişken adları tanımlamak bizi bir nebze kurtarır. Peki ya diğer kurallar ne olacak diye sorduğumuzda, hangi kurallar diyeceğinizi duyar gibiyim. Bizim kültürümüzde olmayan ve sonradan öğrendiğimiz yazılım dillerinin yazım kurallarına aşina olmak, o kültüre ayak uydurmak bizim için epey zor olabiliyor. İşte tam bu noktada karşımıza okunması ve yazılması en kolay dillerden biri olan  Python çıkıyor. Python dil kurallarını, yazılım dilinin felsefesini ön planda tutuyor. PEP 8 ve PEP 20 Python dilini anlamamız için harika PEP(Python Enhancement Proposals / Python Geliştirme Önerileri)'ler sunuyor. 
