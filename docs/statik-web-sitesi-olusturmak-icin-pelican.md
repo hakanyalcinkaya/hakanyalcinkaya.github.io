@@ -8,6 +8,7 @@ tags: ['Python', 'Pelican']
 
 ## Pelican Nedir?
 
+
 Pelican; Python ile yazılmış **statik web sitesi** oluşturma aracıdır.
 
 * Blog Postlarınızı veya Sayfalarınızı Not/Kod Editörünüzle hemen yazmaya başlayabilirsiniz
