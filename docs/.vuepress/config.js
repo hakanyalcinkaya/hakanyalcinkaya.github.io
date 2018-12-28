@@ -1,8 +1,12 @@
 module.exports = {
-  plugins: ['@vuepress/blog'],
+  plugins: [
+    '@vuepress/blog',
+    '@vuepress/google-analytics'
+  ],
   
   title: 'Hakan Yalçınkaya',
   description: 'Hakan Yalçınkaya DevBlog',
+  ga: 'UA-33596509-36',
   
   themeConfig: {
   	nav: [
