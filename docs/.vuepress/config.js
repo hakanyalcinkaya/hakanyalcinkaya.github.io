@@ -36,6 +36,7 @@ module.exports = {
         title: 'Django',
         collapsable: false,
         children: [
+          '/django-admin-raw-fields',
         ]
       },
       {
