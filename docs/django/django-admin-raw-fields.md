@@ -1,5 +1,5 @@
 ---
-title: Django Admin - Performans için raw_id_fields Kullanın
+title: Django Admin - Performans için raw\_id\_fields Kullanın
 Date: 2018-12-29 16:20
 Description: ""
 Category: Django
