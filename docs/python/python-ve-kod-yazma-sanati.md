@@ -8,7 +8,7 @@ tags: ['Python']
 
 # Python ve Kod Yazma Sanatı
 
-![Python](./img/python.jpg)
+![Python](../img/python.jpg)
 
 Python yazılım dili ilgili birçok övgü dolu yazıyı siz de okumuşsunuzdur. "Harika bir dil, yazması çok kolay, okunması çok kolay ve hızlı.." gibi görüşleri sıklıkla duyarız. Python dilinin geliştirdiği güzel özelliklerden biri ise bu görüşleri doğrulayan güzel kod yazma sanatıdır diyebiliriz.
 

@@ -20,23 +20,23 @@ module.exports = {
       children: [
           ['/', 'Ana Sayfa'],
           '/hello-world',
-          '/about_me',
-          '/contact',
+          '/pages/about_me',
+          '/pages/contact',
         ]
       },
       {
         title: 'Python',
         collapsable: false,
         children: [
-        'python-ve-kod-yazma-sanati',
-        'statik-web-sitesi-olusturmak-icin-pelican',
+          '/python/python-ve-kod-yazma-sanati',
+          '/python/statik-web-sitesi-olusturmak-icin-pelican',
         ]
       },
       {
         title: 'Django',
         collapsable: false,
         children: [
-          '/django-admin-raw-fields',
+          '/django/django-admin-raw-fields',
         ]
       },
       {
@@ -49,9 +49,9 @@ module.exports = {
         title: 'Araçlar',
         collapsable: false,
         children: [
-          '/makefile-kullanin',
-          '/markdown-ile-calismak',
-          '/neden-mac-kullaniyorum',
+          '/tools/makefile-kullanin',
+          '/tools/markdown-ile-calismak',
+          '/tools/neden-mac-kullaniyorum',
         ]
       }
   	]

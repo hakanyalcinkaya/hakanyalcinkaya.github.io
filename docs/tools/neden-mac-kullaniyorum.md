@@ -17,7 +17,7 @@ Peki Windows işletim sistemi kullanan bir dizüstü bilgisayar kullandığını
 
 
 > Kod Dünyası'nın attığı görsel başarılı olmuş :)
-> ![Kod Dunyasi](./img/koddunyasi.jpg)
+> ![Kod Dunyasi](../img/koddunyasi.jpg)
 
 ::: warning Ubuntu MATE
 Not: Bu yazıyı yazdığım zamanlarda Apple ürünleri bu kadar pahalı değildi :| Eğer Linux'e Desktop ortamında geçmek isterseniz [Ubuntu Mate](https://ubuntu-mate.org/)yi öneririm.

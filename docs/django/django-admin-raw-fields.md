@@ -15,4 +15,4 @@ class ArticleAdmin(admin.ModelAdmin):
     raw_id_fields = ("newspaper", "user",)
 ```
 
-![Django Admin raw_fields](./img/django_raw_id_fields.png)
+![Django Admin raw_fields](../img/django_raw_id_fields.png)
