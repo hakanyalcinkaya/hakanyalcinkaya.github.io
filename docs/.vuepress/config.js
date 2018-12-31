@@ -1,18 +1,21 @@
 module.exports = {
   plugins: [
     '@vuepress/blog',
-    '@vuepress/google-analytics'
+    '@vuepress/google-analytics',
+    '@vuepress/back-to-top',
+    '@vuepress/medium-zoom',
+    '@vuepress/last-updated'
   ],
-  
+
   title: 'Hakan Yalçınkaya',
   description: 'Hakan Yalçınkaya DevBlog',
   ga: 'UA-33596509-36',
-  
+
   themeConfig: {
   	nav: [
-  	{ text: 'Hakkımda', link: './about_me.html'},
-  	{ text: 'İletişim', link: './contact.html'},
-  	], 
+  	{ text: 'Hakkımda', link: '/pages/about_me.html'},
+  	{ text: 'İletişim', link: '/pages/contact.html'},
+  	],
   	sidebar: [
     {
       title: 'Sayfalar',
@@ -57,4 +60,3 @@ module.exports = {
   	]
   }
 }
-
