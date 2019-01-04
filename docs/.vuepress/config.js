@@ -49,6 +49,14 @@ module.exports = {
         ]
       },
       {
+        title: 'YouTube',
+        collapsable: false,
+        children: [
+          '/youtube/2019-da-hangi-yazilim-dillerini-ogrenmeliyim',
+          '/youtube/jamstack-nedir',
+        ]
+      },
+      {
         title: 'Araçlar',
         collapsable: false,
         children: [

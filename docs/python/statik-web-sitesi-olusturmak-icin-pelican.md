@@ -1,12 +1,12 @@
 ---
 title: Statik Web Sitesi Oluşturmak İçin Pelican
-Date: 2018-12-13 10:20
-Description: ""
-Category: Python
+date: 2018-12-13 10:20
+description: ""
+category: Python
 tags: ['Python', 'Pelican']
 ---
 
-## Pelican Nedir?
+<Title/>
 
 
 Pelican; Python ile yazılmış **statik web sitesi** oluşturma aracıdır.
@@ -29,8 +29,8 @@ Projelerimi Django ile hazırlarken tüm yapıyı en baştan hazırlamak yerine 
 
 ::: tip Bu site ilk önce Jekyllrb, daha sonra Pelican, en son VuePress ile geliştirildi.
 Naaptın Hakan? :)
-Ne derler bilirsiniz; Deneme! Yanılma!.. yani denemezsen yanılmazsın. Yazılım geliştirici olarak ilk yapmamız gerken şey bunu düzeltmektir. 
-Biz birçok kez deneriz, yanılırız ve daha iyisini yapmaya çalışırız. 
-Hızlı olmak için birçok ürünü denemiş ve hangisinde daha hızlı olacağımıza karar vermiş olmamız gerekiyor. 
+Ne derler bilirsiniz; Deneme! Yanılma!.. yani denemezsen yanılmazsın. Yazılım geliştirici olarak ilk yapmamız gerken şey bunu düzeltmektir.
+Biz birçok kez deneriz, yanılırız ve daha iyisini yapmaya çalışırız.
+Hızlı olmak için birçok ürünü denemiş ve hangisinde daha hızlı olacağımıza karar vermiş olmamız gerekiyor.
 Python/Django geliştiricisi olsam da Front End Frameworklerin cazibesine kapılmamak içten değil. Bu iki dünya birbirinden ayrılmış gibi gözükse de Serverless yapılar ve Backend as a Service teknolojileri bizi Front End yapısına daha çok yaklaştırcak, bulduğumuz çözümler bu kısma doğru kaymaya başlayacak.
 :::

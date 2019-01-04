@@ -1,12 +1,12 @@
 ---
 title: Markdown İle Çalışmak
-Date: 2018-12-08 10:20
-Description: ""
-Category: Markdown
+date: 2018-12-08 10:20
+description: ""
+category: Markdown
 tags: ['markdown']
 ---
 
-# Markdown İle Çalışmak
+<Title/>
 
 Markdown'un sitesinde derki :
 

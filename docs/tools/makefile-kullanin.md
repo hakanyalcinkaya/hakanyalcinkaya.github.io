@@ -1,14 +1,14 @@
 ---
 title: Makefile Kullanın
-Date: 2018-12-03 10:20
-Description: ""
-Category: Linux
+date: 2018-12-03 10:20
+description: ""
+category: Linux
 tags: ['linux', 'makefile']
 ---
 
-# Makefile Kullanın
+<Title/>
 
-Bazen kullandığımız komutları unutuyoruz ve her projede farklı farklı komutlar çalıştırmamız gerekebiliyor.. veya dosyaları başkalarına göndereceğimiz zaman hangi komutları kullanmaları gerektiğini tam olarak açıklayamıyabiliyoruz. İşte tam bu noktada projeye özel komutlat oluşturmak için `Makefile` kullanabilirsiniz. 
+Bazen kullandığımız komutları unutuyoruz ve her projede farklı farklı komutlar çalıştırmamız gerekebiliyor.. veya dosyaları başkalarına göndereceğimiz zaman hangi komutları kullanmaları gerektiğini tam olarak açıklayamıyabiliyoruz. İşte tam bu noktada projeye özel komutlat oluşturmak için `Makefile` kullanabilirsiniz.
 
 Klasörde oluşturacağınız `Makefile`(uzantısı yok, ilk harfi büyük) dosyasına `serve` komutunu eklediğimizde artık altındaki satırı çalıştıracak.. alttaki satırda yazacağınız komutu başlatmadan önce `tab` tuşuna basmanız gerekiyor.
 
@@ -19,11 +19,11 @@ serve:
 ```
 
 #### Makefile Dosyasını Nasıl Çalıştıracağım ?
-`make` yazıp `tab` tuşuna basarsanız `Makefile` içerisinde hazırlanmış olan komutu görebilirsiniz. Bu örnekte olduğu gibi `make serve` yazdığınızda serve içesidindeki işlemler gerçekleşecektir. Sadece `make` yazıp `enter` tuşuna bastığınızda ilk komut çalışacaktır. Yine yukardakı örnekte tek komut (serve) olduğu için `make serve` komutunu çalıştırmış olacaksınız. 
+`make` yazıp `tab` tuşuna basarsanız `Makefile` içerisinde hazırlanmış olan komutu görebilirsiniz. Bu örnekte olduğu gibi `make serve` yazdığınızda serve içesidindeki işlemler gerçekleşecektir. Sadece `make` yazıp `enter` tuşuna bastığınızda ilk komut çalışacaktır. Yine yukardakı örnekte tek komut (serve) olduğu için `make serve` komutunu çalıştırmış olacaksınız.
 
 ### Projenizi Hazırlarken Uyguladığınız Adımları Makefile ile gösterin ;)
 
-Paylaştığınız projenizle ilgili adımları Makefile ile oluşturduğunuzda projenin mantığını daha iyi anlatabileceğinizi düşünüyorum. 
+Paylaştığınız projenizle ilgili adımları Makefile ile oluşturduğunuzda projenin mantığını daha iyi anlatabileceğinizi düşünüyorum.
 
 #### Örnek:
 ```
@@ -83,4 +83,3 @@ Paylaştığınız projenizle ilgili adımları Makefile ile oluşturduğunuzda 
 Makefile oluşturmak için tutorial : [makefile-tutorial]
 
 [makefile-tutorial]: http://mrbook.org/blog/tutorials/make/
-

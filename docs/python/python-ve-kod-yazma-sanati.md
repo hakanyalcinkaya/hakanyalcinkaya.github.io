@@ -1,18 +1,18 @@
 ---
 title: Python ve Kod Yazma Sanatı
-Date: 2018-12-25 16:20
-Description: ""
-Category: Python
+date: 2018-12-25 16:20
+description: ""
+category: Python
 tags: ['Python']
 ---
 
-# Python ve Kod Yazma Sanatı
+<Title/>
 
 ![Python](../img/python.jpg)
 
 Python yazılım dili ilgili birçok övgü dolu yazıyı siz de okumuşsunuzdur. "Harika bir dil, yazması çok kolay, okunması çok kolay ve hızlı.." gibi görüşleri sıklıkla duyarız. Python dilinin geliştirdiği güzel özelliklerden biri ise bu görüşleri doğrulayan güzel kod yazma sanatıdır diyebiliriz.
 
-*"Kodu çalıştırdığımda hata vermiyorsa sorun yoktur.."* Yazılım geliştirmeye başladığımızda kullandığımız ilk yapı genelde budur ve uzunca bir süre bu yarzımızı değiştirmeden yazılımlarımızı geliştirmeye devam ederiz. Yazdığımız kodu 3 ay sonra okumaya çalıştığımızda eğer x, y, z, i gibi değişkenler(variables) görüyorsak ve bu değişkenlerin ne olduğunu anlamakla vakit kaybetmeye başladıysak bir şeylerin değişmesinin zamanı gelmiştir. İşte bu noktada düzgün değişken adları tanımlamak bizi bir nebze kurtarır. Peki ya diğer kurallar ne olacak diye sorduğumuzda, hangi kurallar diyeceğinizi duyar gibiyim. Bizim kültürümüzde olmayan ve sonradan öğrendiğimiz yazılım dillerinin yazım kurallarına aşina olmak, o kültüre ayak uydurmak bizim için epey zor olabiliyor. İşte tam bu noktada karşımıza okunması ve yazılması en kolay dillerden biri olan  Python çıkıyor. Python dil kurallarını, yazılım dilinin felsefesini ön planda tutuyor. PEP 8 ve PEP 20 Python dilini anlamamız için harika PEP(Python Enhancement Proposals / Python Geliştirme Önerileri)'ler sunuyor. 
+*"Kodu çalıştırdığımda hata vermiyorsa sorun yoktur.."* Yazılım geliştirmeye başladığımızda kullandığımız ilk yapı genelde budur ve uzunca bir süre bu yarzımızı değiştirmeden yazılımlarımızı geliştirmeye devam ederiz. Yazdığımız kodu 3 ay sonra okumaya çalıştığımızda eğer x, y, z, i gibi değişkenler(variables) görüyorsak ve bu değişkenlerin ne olduğunu anlamakla vakit kaybetmeye başladıysak bir şeylerin değişmesinin zamanı gelmiştir. İşte bu noktada düzgün değişken adları tanımlamak bizi bir nebze kurtarır. Peki ya diğer kurallar ne olacak diye sorduğumuzda, hangi kurallar diyeceğinizi duyar gibiyim. Bizim kültürümüzde olmayan ve sonradan öğrendiğimiz yazılım dillerinin yazım kurallarına aşina olmak, o kültüre ayak uydurmak bizim için epey zor olabiliyor. İşte tam bu noktada karşımıza okunması ve yazılması en kolay dillerden biri olan  Python çıkıyor. Python dil kurallarını, yazılım dilinin felsefesini ön planda tutuyor. PEP 8 ve PEP 20 Python dilini anlamamız için harika PEP(Python Enhancement Proposals / Python Geliştirme Önerileri)'ler sunuyor.
 
 Ref: [https://www.python.org/dev/peps/](https://www.python.org/dev/peps/)
 
@@ -32,7 +32,7 @@ Birçok yazılım dilinde kodlar gözümüze hoş gözükmese de, baktığımız
 
 ### A Foolish Consistency is the Hobgoblin of Little Minds (Aptalca Bir Tutarlılık Küçük Beyinlerin Cinliğidir)
 
-PEP 8 Stil Referanslarını okumaya başladığımda yukardaki başlığı görünce çok şaşırmıştım ve çok ilgimi çekmişti. Python boşlukların nasıl olması gerektiğinden tutunda satırdaki karakter sayısına kadar herşeyi PEP 8 ile standartlaştırıyor. Eğer oluşturduğunuz kodlarda içiçe girinti(indentation) kullanmanız gerekiyorsa bir indent için 4 boşluk, diğeri için 2 boşluk veremezsiniz. Hepsinin standart olması gerekir. Bu standartlar sizin ve başkalarının kodu okumasını kolaylaştırır. Aynı zamanda daha hızlı kod yazmanıza olanak sağlar. 
+PEP 8 Stil Referanslarını okumaya başladığımda yukardaki başlığı görünce çok şaşırmıştım ve çok ilgimi çekmişti. Python boşlukların nasıl olması gerektiğinden tutunda satırdaki karakter sayısına kadar herşeyi PEP 8 ile standartlaştırıyor. Eğer oluşturduğunuz kodlarda içiçe girinti(indentation) kullanmanız gerekiyorsa bir indent için 4 boşluk, diğeri için 2 boşluk veremezsiniz. Hepsinin standart olması gerekir. Bu standartlar sizin ve başkalarının kodu okumasını kolaylaştırır. Aynı zamanda daha hızlı kod yazmanıza olanak sağlar.
 
 Hatalı kod örneği:
 
@@ -106,7 +106,7 @@ optparse.py:472:29: E221 multiple spaces before operator
 optparse.py:544:21: W601 .has_key() is deprecated, use 'in'
 ```
 
-#### 
+####
 
 ## PEP 20 - The Zen of Python
 
@@ -210,6 +210,6 @@ Diğer örnekleri incelemek için : [http://artifex.org/~hblanks/talks/2011/pep2
 * Eğer birşeyi(uygulama, modül, vs.) açıklamak kolaysa, o şey iyi bir fikirdir(If the implementation is easy to explain, it may be a good idea).
 * İsim Alanları/Uzayları harika fikirlerdir, onlardan daha fazla yapalım(Namespaces are one honking great idea -- let's do more of those!)
 
-Kod yazma sanatı için Python'ın oluşturduğu standartlar bizim yazdığımız kodları daha akılcıl, okunabilir ve geliştirilebilir kılar. Python'ın Zen'i defalarca okunması ve bu konuda yazılmış kodlarla pekiştirilmesi gereken harika bir kaynaktır. 
+Kod yazma sanatı için Python'ın oluşturduğu standartlar bizim yazdığımız kodları daha akılcıl, okunabilir ve geliştirilebilir kılar. Python'ın Zen'i defalarca okunması ve bu konuda yazılmış kodlarla pekiştirilmesi gereken harika bir kaynaktır.
 
 Şiir gibi kod yazmanız dileğiyle ;)

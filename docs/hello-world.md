@@ -1,14 +1,12 @@
 ---
 title: Merhaba Dünya
-Date: 2018-12-25 16:20
+date: 2018-12-25 16:20
 Description: ""
 Category: Python
 tags: ['Markdown', 'JAMstack']
 ---
 
-# Merhaba Dünya :)
-
-<span>{{ $page.frontmatter.Date }}</span>
+<Title/>
 
 Blog yazma konusu benim için her zaman zor olmuştur. Hepimizin anlatmak istediği birçok konu var. İşlevsel konuları seçmek ve işe yarar konularda yazı yazmak inanılmaz zor geliyor bana. Özellikle konu üretkenlik olunca daha fazla düşünmek zorunda kalıyorum.
 

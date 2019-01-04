@@ -1,17 +1,17 @@
 ---
 title: Neden Mac OS Kullanıyorum
-Date: 2018-12-13 10:20
-Description: ""
-Category: Mac
+date: 2018-12-13 10:20
+description: ""
+category: Mac
 tags: ['mac']
 ---
 
-# Neden Mac OS Kullanıyorum
+<Title/>
 
-Mac kullanmaya başlamanadan önce, Mac kullanıcılarını gözlemlediğimde dizüstü bilgisayarlarının ekranlarını kapatıp çantalarına öylece koyduklarını, hiçbir dosyayı kaydetmediklerini görüyordum. `Bilgisayarını neden kapatmıyorsun` diye sorduğumda da `ekranını kapattım ya daha ne yapmalıyım ki` diye cevaplar duyuyordum ve bu bana çok garip geliyordu. 
+Mac kullanmaya başlamanadan önce, Mac kullanıcılarını gözlemlediğimde dizüstü bilgisayarlarının ekranlarını kapatıp çantalarına öylece koyduklarını, hiçbir dosyayı kaydetmediklerini görüyordum. `Bilgisayarını neden kapatmıyorsun` diye sorduğumda da `ekranını kapattım ya daha ne yapmalıyım ki` diye cevaplar duyuyordum ve bu bana çok garip geliyordu.
 
 
-Peki Windows işletim sistemi kullanan bir dizüstü bilgisayar kullandığınızda bu işlemi yaparsanız ne olur ? çökebilir, dosyalarınız kaybolabilir, ekranını açtığınızda bi daha açılmayabilir. Peki bunları yaşadığınızda ne düşünüyorsunuz ? hmm bu işletim sisteminde bi yerlerde kapat işlemi vardı.. bunu yapmalıyım.. Yani deneyimleriniz o işletim sistemini daha düzgün kullanmanızı, bazen yapabileceklerinden korktuğunuz için ona iyi bakmanızı istiyor :)) registry şişti, bana format at diyor.. Mac Os kullanan birisi daha bilgisayarını kapatmayı bilmiyorken Windows işletim sistemi kullanan herkes format atmayı öğrenmiş oluyor.. 
+Peki Windows işletim sistemi kullanan bir dizüstü bilgisayar kullandığınızda bu işlemi yaparsanız ne olur ? çökebilir, dosyalarınız kaybolabilir, ekranını açtığınızda bi daha açılmayabilir. Peki bunları yaşadığınızda ne düşünüyorsunuz ? hmm bu işletim sisteminde bi yerlerde kapat işlemi vardı.. bunu yapmalıyım.. Yani deneyimleriniz o işletim sistemini daha düzgün kullanmanızı, bazen yapabileceklerinden korktuğunuz için ona iyi bakmanızı istiyor :)) registry şişti, bana format at diyor.. Mac Os kullanan birisi daha bilgisayarını kapatmayı bilmiyorken Windows işletim sistemi kullanan herkes format atmayı öğrenmiş oluyor..
 
 İşte tam bu noktada bu yazıyı okuyan Developer bu konuların onunla alakası olmadığını düşünerek gülümsüyor :)
 

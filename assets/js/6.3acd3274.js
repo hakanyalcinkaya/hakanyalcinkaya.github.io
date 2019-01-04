@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{171:function(t,e,i){"use strict";i.r(e);var s=i(0),l=Object(s.a)({},function(){var t=this.$createElement,e=this._self._c||t;return e("div",[e("h1",{staticStyle:{color:"#d35400"}},[this._v(this._s(this.$page.title))]),this._v(" "),e("hr")])},[],!1,null,null,null);l.options.__file="Title.vue";e.default=l.exports}}]);
