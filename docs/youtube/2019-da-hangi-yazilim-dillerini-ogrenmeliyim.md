@@ -4,6 +4,7 @@ date: 2019-01-02 10:20
 description: ""
 category: Python, JavaScript
 tags: ['Python', 'JavaScript', 'Java', 'StackOverflow']
+youtube: "eEehUKo7brY"
 ---
 <Title/>
 
@@ -11,4 +12,4 @@ Ercan Bozkurt ile birlikte StackOverflow'daki Trends verilerine gÃ¶re hangi yazÄ
 
 Video'yu inceleyin ;)
 
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/eEehUKo7brY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<Youtube/>
