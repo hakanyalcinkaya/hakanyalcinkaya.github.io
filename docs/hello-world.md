@@ -4,6 +4,11 @@ date: 2018-12-25 16:20
 Description: ""
 Category: Python
 tags: ['Markdown', 'JAMstack']
+meta:
+  - name: description
+    content: Üretkenlik, Performans ve Yazılım hakkında blog yazıları içerir. İncelemek için tıklayınız.
+  - name: keywords
+    content: hakan yalçınkaya, blog, yazılım, python, JavaScript, YouTube
 ---
 
 <Title/>
