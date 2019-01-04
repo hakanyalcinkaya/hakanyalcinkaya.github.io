@@ -60,6 +60,7 @@ module.exports = {
         title: 'Araçlar',
         collapsable: false,
         children: [
+          '/tools/flatuicolors',
           '/tools/makefile-kullanin',
           '/tools/markdown-ile-calismak',
           '/tools/neden-mac-kullaniyorum',
