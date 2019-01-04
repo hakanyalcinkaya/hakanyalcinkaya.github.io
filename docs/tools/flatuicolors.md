@@ -12,4 +12,4 @@ tags: ['tools']
 
 ![FlatUIColors](../img/flatuicolors.png)
 
-Bu siteyi uzun zamandır kullanıyorum. Neredeyse her gün hangi rengi kullansam acaba diye düşünüp baktığım sitenin kime ait olduğuna bugün incelediğimde bir türk olduğunu görünce çok mutlu oldum. [Ahmet](http://ahmetsulek.com/)'in harika projeleri var. Muhakkak inceleyin.
+Bu siteyi uzun zamandır kullanıyorum. Neredeyse her gün hangi rengi kullansam acaba diye düşünüp baktığım sitenin kime ait olduğunu incelediğimde bir türk olduğunu görünce çok mutlu oldum. [Ahmet](http://ahmetsulek.com/)'in harika projeleri var. Muhakkak inceleyin.
