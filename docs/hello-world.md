@@ -9,6 +9,7 @@ meta:
     content: Üretkenlik, Performans ve Yazılım hakkında blog yazıları içerir. İncelemek için tıklayınız.
   - name: keywords
     content: hakan yalçınkaya, blog, yazılım, python, JavaScript, YouTube
+  
 ---
 
 <Title/>
