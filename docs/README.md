@@ -34,3 +34,7 @@ footer: Copyright © 2019
     </a>
   </li>
 </ul>
+
+***
+
+Yayınlanan Blog Yazısı : {{ $site.pages.length -3 }}

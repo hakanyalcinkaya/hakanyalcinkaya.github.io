@@ -8,7 +8,8 @@
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "sitemap-build": "node sitemap.js"
   },
   "repository": {
     "type": "git",
@@ -40,6 +41,7 @@
     "plyr": "^3.4.7",
     "sitemap-generator": "^8.3.2",
     "vue-moment": "^4.0.0",
-    "vue-plyr": "^5.0.4"
+    "vue-plyr": "^5.0.4",
+    "vuepress-plugin-sitemap": "^2.1.1"
   }
 }
