@@ -1,3 +1,16 @@
+const fs = require('fs');
+
+function getMdFiles(path) {
+  const dir = fs.readdirSync('docs/'+ path);
+  const dirFiles = dir.filter( elm => elm.match(new RegExp(`.*\.(${'md'})`, 'ig')));
+  let files = []
+  dirFiles.forEach(function(item) {
+    files.push('/' + path + '/' + item.replace(/\.[^/.]+$/, ""))
+  })
+  return files
+}
+
+
 module.exports = {
   plugins: [
     '@vuepress/blog',
@@ -38,23 +51,17 @@ module.exports = {
       {
         title: 'Django',
         collapsable: false,
-        children: [
-          '/django/django-admin-raw-fields',
-        ]
+        children: getMdFiles('django')
       },
       {
         title: 'JavaScript',
         collapsable: false,
-        children: [
-        ]
+        children: []
       },
       {
         title: 'YouTube',
         collapsable: false,
-        children: [
-          '/youtube/2019-da-hangi-yazilim-dillerini-ogrenmeliyim',
-          '/youtube/jamstack-nedir',
-        ]
+        children: getMdFiles('youtube')
       },
       {
         title: 'Araçlar',
