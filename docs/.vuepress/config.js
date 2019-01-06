@@ -44,8 +44,6 @@ function getSideBars(names) {
 module.exports = {
   plugins: [
     '@vuepress/google-analytics',
-    '@vuepress/back-to-top',
-    '@vuepress/medium-zoom',
     '@vuepress/last-updated'
   ],
 
