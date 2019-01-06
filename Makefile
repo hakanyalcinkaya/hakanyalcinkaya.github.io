@@ -3,6 +3,7 @@ start:
 build:
 	yarn docs:build
 	cp -Rf docs/.vuepress/dist/ .
+	make sitemap
 count-md:
 	ls -d docs/**/*.md | wc -l
 sitemap:
