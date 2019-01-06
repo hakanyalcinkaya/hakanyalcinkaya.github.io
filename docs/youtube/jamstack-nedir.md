@@ -5,6 +5,11 @@ description: ""
 category: JavaScript
 tags: ['JAMstack', 'JavaScript', 'VuePress']
 youtube: "7tG6yLRahLI"
+meta:
+  - name: description
+    content: JAMstack Nedir? Yeni Nesil Modern Web Siteleri Nasıl Yapılır? Bu sayfadan inceleyebilirsiniz
+  - name: keywords
+    content: hakan yalçınkaya, blog, yazılım, python, JavaScript, YouTube, vue, vuepress, jamstack, staticgen, github, github pages
 ---
 <Title/>
 

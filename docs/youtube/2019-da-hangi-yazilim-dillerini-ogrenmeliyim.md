@@ -5,6 +5,11 @@ description: ""
 category: Python, JavaScript
 tags: ['Python', 'JavaScript', 'Java', 'StackOverflow']
 youtube: "eEehUKo7brY"
+meta:
+  - name: description
+    content: 2019'da Hangi Yazılım Dillerini Öğrenmeliyim? Bu sayfadan inceleyebilirsiniz
+  - name: keywords
+    content: hakan yalçınkaya, blog, yazılım, python, JavaScript, YouTube, vue, vuepress, jamstack, staticgen, github, github pages
 ---
 <Title/>
 
