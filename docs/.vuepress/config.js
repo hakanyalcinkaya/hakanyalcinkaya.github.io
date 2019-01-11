@@ -54,9 +54,10 @@ module.exports = {
 
   themeConfig: {
   	nav: [
-  	{ text: 'Hakkımda', link: '/pages/about_me.html'},
-  	{ text: 'İletişim', link: '/pages/contact.html'},
-    { text: 'GitHub', link: 'https://github.com/hakanyalcinkaya/'},
+  	    { text: 'Hakkımda', link: '/pages/about_me.html'},
+  	    { text: 'İletişim', link: '/pages/contact.html'},
+        { text: 'linkedIn', link: 'https://www.linkedin.com/in/hakanyalcinkaya'},
+        { text: 'GitHub', link: 'https://github.com/hakanyalcinkaya/'},
   	],
   	sidebar: getSideBars(sideBarNames)
   }
