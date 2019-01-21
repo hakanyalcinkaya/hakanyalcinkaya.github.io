@@ -13,22 +13,34 @@
     <loc>https://hakanyalcinkaya.github.io/hello-world.html</loc>
   </url>
   <url>
-    <loc>https://hakanyalcinkaya.github.io/python/python-ve-kod-yazma-sanati.html</loc>
+    <loc>https://hakanyalcinkaya.github.io/python/001-python-ve-kod-yazma-sanati.html</loc>
   </url>
   <url>
-    <loc>https://hakanyalcinkaya.github.io/python/statik-web-sitesi-olusturmak-icin-pelican.html</loc>
+    <loc>https://hakanyalcinkaya.github.io/python/002-statik-web-sitesi-olusturmak-icin-pelican.html</loc>
+  </url>
+  <url>
+    <loc>https://hakanyalcinkaya.github.io/python/003-python-interactive-shells.html</loc>
   </url>
   <url>
     <loc>https://hakanyalcinkaya.github.io/django/django-admin-raw-fields.html</loc>
   </url>
   <url>
-    <loc>https://hakanyalcinkaya.github.io/youtube/2019-da-hangi-yazilim-dillerini-ogrenmeliyim.html</loc>
+    <loc>https://hakanyalcinkaya.github.io/youtube/001-2019-da-hangi-yazilim-dillerini-ogrenmeliyim.html</loc>
   </url>
   <url>
-    <loc>https://hakanyalcinkaya.github.io/youtube/jamstack-nedir.html</loc>
+    <loc>https://hakanyalcinkaya.github.io/youtube/002-jamstack-nedir.html</loc>
   </url>
   <url>
-    <loc>https://hakanyalcinkaya.github.io/youtube/vuepress-ile-statik-web-sitesi-olusturma-01.html</loc>
+    <loc>https://hakanyalcinkaya.github.io/youtube/003-vuepress-ile-statik-web-sitesi-olusturma-01.html</loc>
+  </url>
+  <url>
+    <loc>https://hakanyalcinkaya.github.io/youtube/004-vuepress-sitemizi-github-pages-uzerinde-ucretsiz-yayinlama.html</loc>
+  </url>
+  <url>
+    <loc>https://hakanyalcinkaya.github.io/youtube/005-vuepress-diger-ayarlarin-incelenmesi.html</loc>
+  </url>
+  <url>
+    <loc>https://hakanyalcinkaya.github.io/youtube/006-yazilimcilar-icin-trello.html</loc>
   </url>
   <url>
     <loc>https://hakanyalcinkaya.github.io/linux/nnn-file-manager.html</loc>

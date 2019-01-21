@@ -24,7 +24,7 @@ let sideBar = [{
 const sideBarNames = [
   ['Python', 'Python'],
   ['Django', 'Django'],
-  // ['JavaScript', 'JavaScript'],
+  ['javascript-pages', 'JavaScript'],
   ['YouTube', 'YouTube'],
   ['Linux', 'Linux'],
   ['Tools', 'Araçlar']
