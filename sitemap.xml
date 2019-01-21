@@ -25,6 +25,9 @@
     <loc>https://hakanyalcinkaya.github.io/django/django-admin-raw-fields.html</loc>
   </url>
   <url>
+    <loc>https://hakanyalcinkaya.github.io/javascript-pages/001-headless-cms-nedir.html</loc>
+  </url>
+  <url>
     <loc>https://hakanyalcinkaya.github.io/youtube/001-2019-da-hangi-yazilim-dillerini-ogrenmeliyim.html</loc>
   </url>
   <url>
@@ -46,15 +49,18 @@
     <loc>https://hakanyalcinkaya.github.io/linux/nnn-file-manager.html</loc>
   </url>
   <url>
-    <loc>https://hakanyalcinkaya.github.io/tools/flatuicolors.html</loc>
+    <loc>https://hakanyalcinkaya.github.io/tools/001-markdown-ile-calismak.html</loc>
   </url>
   <url>
-    <loc>https://hakanyalcinkaya.github.io/tools/makefile-kullanin.html</loc>
+    <loc>https://hakanyalcinkaya.github.io/tools/002-makefile-kullanin.html</loc>
   </url>
   <url>
-    <loc>https://hakanyalcinkaya.github.io/tools/markdown-ile-calismak.html</loc>
+    <loc>https://hakanyalcinkaya.github.io/tools/003-neden-mac-kullaniyorum.html</loc>
   </url>
   <url>
-    <loc>https://hakanyalcinkaya.github.io/tools/neden-mac-kullaniyorum.html</loc>
+    <loc>https://hakanyalcinkaya.github.io/tools/004-flatuicolors.html</loc>
+  </url>
+  <url>
+    <loc>https://hakanyalcinkaya.github.io/tools/005-iterm-ve-itermocil.html</loc>
   </url>
 </urlset>

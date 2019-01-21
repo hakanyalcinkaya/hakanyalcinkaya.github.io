@@ -56,8 +56,10 @@ module.exports = {
   	nav: [
   	    { text: 'Hakkımda', link: '/pages/about_me.html'},
   	    { text: 'İletişim', link: '/pages/contact.html'},
-        { text: 'linkedIn', link: 'https://www.linkedin.com/in/hakanyalcinkaya'},
+        { text: 'LinkedIn', link: 'https://www.linkedin.com/in/hakanyalcinkaya'},
         { text: 'GitHub', link: 'https://github.com/hakanyalcinkaya/'},
+        { text: 'Medium', link: 'https://medium.com/@hakanyalcinkaya'},
+
   	],
   	sidebar: getSideBars(sideBarNames)
   }
