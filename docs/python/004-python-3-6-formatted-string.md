@@ -1,9 +1,17 @@
 ---
 title: Python Formatted Strings(f-strings), .format() ve % ile Metin Biçimlendirme Nasıl Yapılır?
-date: 2019-01-03 10:20
+date: 2019-01-30 10:20
 description: ""
 category: Python
 tags: ['python', 'python3', ]
+fString: [{
+    'title': 'Başa Karakter Eklemek name="python"',
+    'percent': '-',
+    'format': '"{:_>8}".format(name)',
+    'f': 'f"{name:_>8}"',
+    'output': "'__python'"
+  }
+]
 meta:
   - name: description
     content: Python Formatted Strings(f-strings), .format() ve % ile Metin Biçimlendirme Nasıl Yapılır?
@@ -90,18 +98,18 @@ f"hey! {'python':^10} is ready"
 Bir kodu incelerken 4 haneli rakamlar oluşturmak için if kullandığını gördüm, eğer 10'dan küçükse başına ÜÇ SIFIR(000) ekle demiş. Örnek: 0005. Bu işlemi if kullanmak yerine metin biçimlendirme ile yapabiliriz.
 
 ```python
-"{:04d}".format(5)
+"{:04}".format(5)
 >>> '0005'
 
-f"{5:04d}"
+f"{5:04}"
 >>> '0005'
 
 pk = 99
 
-"{:04d}".format(pk)
+"{:04}".format(pk)
 >>> '0099'
 
-f"{pk:04d}"
+f"{pk:04}"
 >>> '0099'
 
 
@@ -122,7 +130,31 @@ f"{pk:_<8}"
 
 ```
 
-
-::: warning
-Şimdilik bu kadar yazdım, yine metin biçimlendirme ile ilgili örnekler eklemeye devam edeceğim. Sonuna bir cheatsheet dökümanı hazırlamayı düşünüyorum. Yazının devamını beklemeden f-strings kullanmaya hemen başla ;)
+::: warning Az Kaldı :)
+Şimdilik bu kadar yazdım, yine metin biçimlendirme ile ilgili örnekler eklemeye devam edeceğim. Sonuna bir cheatsheet dökümanı hazırlamaya başladım. Yazının devamını beklemeden f-strings kullanmaya hemen başla ;) soruların olursa buralardayım :)
 :::
+
+## Cheat Sheet
+
+<table>
+  <thead align="left">
+    <tr>
+      <th width="%20">İşlem</th>
+      <th width="%20">%</th>
+      <th width="%20">.format</th>
+      <th width="%20">f-strings</th>
+      <th width="%20">çıktı</th>
+    </tr>
+  </thead>
+  <tbody align="left">
+    <template v-for="item in $page.frontmatter.fString">
+      <tr>
+        <td width="%20">{{ item.title }}</td>
+        <td width="%20">{{ item.percent }}</td>
+        <td width="%20">{{ item.format }}</td>
+        <td width="%20">{{ item.f }}</td>
+        <td width="%20">{{ item.output }}</td>
+      </tr>
+    </template>
+  </tbody>
+</table>
