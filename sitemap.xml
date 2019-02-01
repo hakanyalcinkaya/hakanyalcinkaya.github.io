@@ -16,10 +16,10 @@
     <loc>https://hakanyalcinkaya.github.io/python/001-python-ve-kod-yazma-sanati.html</loc>
   </url>
   <url>
-    <loc>https://hakanyalcinkaya.github.io/python/002-statik-web-sitesi-olusturmak-icin-pelican.html</loc>
+    <loc>https://hakanyalcinkaya.github.io/python/003-python-interactive-shells.html</loc>
   </url>
   <url>
-    <loc>https://hakanyalcinkaya.github.io/python/003-python-interactive-shells.html</loc>
+    <loc>https://hakanyalcinkaya.github.io/python/002-statik-web-sitesi-olusturmak-icin-pelican.html</loc>
   </url>
   <url>
     <loc>https://hakanyalcinkaya.github.io/python/004-python-3-6-formatted-string.html</loc>
@@ -28,10 +28,10 @@
     <loc>https://hakanyalcinkaya.github.io/django/django-admin-raw-fields.html</loc>
   </url>
   <url>
-    <loc>https://hakanyalcinkaya.github.io/javascript-pages/001-headless-cms-nedir.html</loc>
+    <loc>https://hakanyalcinkaya.github.io/youtube/001-2019-da-hangi-yazilim-dillerini-ogrenmeliyim.html</loc>
   </url>
   <url>
-    <loc>https://hakanyalcinkaya.github.io/youtube/001-2019-da-hangi-yazilim-dillerini-ogrenmeliyim.html</loc>
+    <loc>https://hakanyalcinkaya.github.io/javascript-pages/001-headless-cms-nedir.html</loc>
   </url>
   <url>
     <loc>https://hakanyalcinkaya.github.io/youtube/002-jamstack-nedir.html</loc>
@@ -49,13 +49,10 @@
     <loc>https://hakanyalcinkaya.github.io/youtube/006-yazilimcilar-icin-trello.html</loc>
   </url>
   <url>
-    <loc>https://hakanyalcinkaya.github.io/linux/001-nnn-file-manager.html</loc>
+    <loc>https://hakanyalcinkaya.github.io/tools/002-makefile-kullanin.html</loc>
   </url>
   <url>
     <loc>https://hakanyalcinkaya.github.io/tools/001-markdown-ile-calismak.html</loc>
-  </url>
-  <url>
-    <loc>https://hakanyalcinkaya.github.io/tools/002-makefile-kullanin.html</loc>
   </url>
   <url>
     <loc>https://hakanyalcinkaya.github.io/tools/003-neden-mac-kullaniyorum.html</loc>
@@ -65,5 +62,8 @@
   </url>
   <url>
     <loc>https://hakanyalcinkaya.github.io/tools/005-iterm-ve-itermocil.html</loc>
+  </url>
+  <url>
+    <loc>https://hakanyalcinkaya.github.io/linux/001-nnn-file-manager.html</loc>
   </url>
 </urlset>
