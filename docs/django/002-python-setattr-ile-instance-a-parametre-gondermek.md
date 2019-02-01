@@ -17,10 +17,8 @@ request.GET ile gelen first_name bilgisini alıp eğer Model'in içinde bu tanı
 
 
 ```python
-
 # Gelen bilgi
-
-dict_request = dict(request.GET)
+dict_request = {'first_name': 'hakan'}
 # Dict içindeki ilk bilgiyi almaya çalışıyoruz:
 item, value = next(iter(dict_request.items()))
 
