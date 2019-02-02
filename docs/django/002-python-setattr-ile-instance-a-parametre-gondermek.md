@@ -1,6 +1,6 @@
 ---
 title: Django Model Instance'a setattr ile Key, Value Nasıl Gönderilir?
-date: 2018-12-29 16:20
+date: 2019-01-30 16:20
 category: Django
 tags: ['Django', 'DjangoModel']
 meta:
@@ -34,3 +34,15 @@ if item in user.__dict__ and value:
     setattr(user, item, value)
     user.save()
 ```
+
+:::warning Bonus:
+```python
+# instance içindeki attribute'u almak için:
+
+item = 'first_name'
+user = User.objects.get(email='hakanyalcinkaya@gmail.com')
+
+getattrb(user, item)
+>>> 'hakan'
+```
+:::
