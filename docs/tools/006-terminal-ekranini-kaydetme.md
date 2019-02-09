@@ -23,7 +23,9 @@ Bu ekran görüntüsünde Spotify'ı terminal üzerinden çalıştırırken kay�
 
 github üzerinde sıkça gördüğünüz kurulum videoları işte bu harika araçla yapılıyor.
 
-kurmak için macOS gerekli maalesef.
+::: warning Not:
+asciinema şimdilik macOS işletim sisteminde çalışıyor :( 
+:::
 
 ```
 # Kurmak için:

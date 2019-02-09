@@ -28,10 +28,10 @@
     <loc>https://hakanyalcinkaya.github.io/python/005-python-3-6-ile-gelen-yenilikler.html</loc>
   </url>
   <url>
-    <loc>https://hakanyalcinkaya.github.io/django/002-python-setattr-ile-instance-a-parametre-gondermek.html</loc>
+    <loc>https://hakanyalcinkaya.github.io/django/001-django-admin-raw-fields.html</loc>
   </url>
   <url>
-    <loc>https://hakanyalcinkaya.github.io/django/001-django-admin-raw-fields.html</loc>
+    <loc>https://hakanyalcinkaya.github.io/django/002-python-setattr-ile-instance-a-parametre-gondermek.html</loc>
   </url>
   <url>
     <loc>https://hakanyalcinkaya.github.io/javascript-pages/001-headless-cms-nedir.html</loc>
@@ -71,5 +71,8 @@
   </url>
   <url>
     <loc>https://hakanyalcinkaya.github.io/tools/005-iterm-ve-itermocil.html</loc>
+  </url>
+  <url>
+    <loc>https://hakanyalcinkaya.github.io/tools/006-terminal-ekranini-kaydetme.html</loc>
   </url>
 </urlset>

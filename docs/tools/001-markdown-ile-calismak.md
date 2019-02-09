@@ -15,3 +15,9 @@ Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you 
 Yani :) Markdown sayesinde normal yazıdan HTML işaretleme diline yazılarınızı rahatça dönüştürebilirsiniz. Markdown size daha kolay okunabilir, yazılabilir ve hemen HTML'e çevrilebilir bir yapı sunmaktadır. Tabi ki sadece HTML değil, kullandığınız uygulamaların opsiyonlarına göz atacak olursanız PDF, DOC, TXT gibi birçok döküman biçimine de Markdown'u kolaylıkla dönüştürebileceğinizi görebilirsiniz.
 
 Daha önce **GitBook** içerisinde hazırladığım [Markdown Klavuzuna ulaşmak için tıklayın..](https://hakanyalcinkaya.gitbooks.io/markdown/content/genel_bakis.html)
+
+
+::: tip Markdown ile ilgili daha fazla şey öğrenmek istersen Vakademi'deki eğitimimi inceleyebilirsin ;)
+[Markdown Kullanım Rehberi](https://vakademi.com.tr/home/category/web/markdown-kullanim-rehberi/)
+[![Vakademi - Markdown kullanim rehberi](../img/vakademi-markdown.jpg)](https://vakademi.com.tr/home/category/web/markdown-kullanim-rehberi/)
+:::
