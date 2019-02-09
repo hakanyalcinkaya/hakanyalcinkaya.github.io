@@ -1,6 +1,6 @@
 ---
 title: Python 3.6 ile Birlikte Gelen Yenilikler (f-strings, Underscores, Secrets, ve Types)
-date: 2019-01-30 10:20
+date: 2019-02-08 10:20
 description: ""
 category: Python
 tags: ['python', 'python3', ]
