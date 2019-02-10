@@ -66,6 +66,6 @@ module.exports = {
 
   	],
   	sidebar: getSideBars(sideBarNames),
-    logo: "/hakan-yalcinkaya-logo.png",
+    logo: "/hakan-yalcinkaya-logo.png"
   }
 }

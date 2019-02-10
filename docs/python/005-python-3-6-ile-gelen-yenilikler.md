@@ -12,6 +12,8 @@ meta:
 ---
 <Title/>
 
+![Python](../img/python-3-6.png)
+
 Python 3.6 ile birlikte gelen [f-strings](004-python-3-6-formatted-string.html) ile ilgili ayrı bir makale yazıp en çok kullanılan biçimlendirme şekillerini ayrıca yazmıştım. Şimdi hızlı bir tur daha atalım :)
 
 Python 3.6 ile Birlikte Gelen Yenilikler:

@@ -20,10 +20,12 @@ meta:
 ---
 <Title/>
 
+![Python](../img/f-strings-3-6.png)
+
 Bu blog yazısına başlarken hedefim Python 3.6 ile birlikte gelen **f-strings**'i anlatmaktı, fakat uzun zamandır kullanılan % ve .format ile metin biçimlendirme özelliklerini birlikte örneklendirirsem daha iyi olacağını düşündüm.
 
 ## PEP Döküman Linkleri :
-* [f-strings(f'Hello {first_name}'): PEP 498 -- Literal String Interpolation](https://www.python.org/dev/peps/pep-0498/)
+* [f-strings(f"Hello {first_name}"): PEP 498 -- Literal String Interpolation](https://www.python.org/dev/peps/pep-0498/)
 * ['Hello {}'.format(first_name) - Advanced String Formatting](https://www.python.org/dev/peps/pep-3101/)
 
 % Biçimlendirme yöntemi çok uzun zamandır kullanılıyor. Python 2.7 ile birlikte .format özelliği de okuma rahatlığı açısından sıkça kullanılmaya başlandı. Python 3.6 ile birlikte gelen f-strings ise performans ve okuma açısından çok daha iyi.
@@ -32,7 +34,7 @@ Bu blog yazısına başlarken hedefim Python 3.6 ile birlikte gelen **f-strings*
 ## Hemen kullanmaya başlayalım:
 
 :::danger UNUTMA!
-**f''**(f-strings) Python 3.6 ve üzerinde çalışır. Birkaç yerde bu bilgiyi hatırlattım ama yinede buraya uyarı ekliyorum ;)
+**f'{first_name}'**(f-strings) Python 3.6 ve üzerinde çalışır. Birkaç yerde bu bilgiyi hatırlattım ama yinede buraya uyarı ekliyorum ;)
 :::
 
 ```python
