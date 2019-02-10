@@ -48,6 +48,10 @@ module.exports = {
     '@vuepress/last-updated'
   ],
 
+  head: [
+    ['link', { rel: 'icon', href: '/hakan-yalcinkaya-logo.png' }]
+  ],
+
   title: 'Hakan Yalçınkaya',
   description: 'Hakan Yalçınkaya DevBlog',
   ga: 'UA-33596509-36',
@@ -61,6 +65,7 @@ module.exports = {
         { text: 'Medium', link: 'https://medium.com/@hakanyalcinkaya'},
 
   	],
-  	sidebar: getSideBars(sideBarNames)
+  	sidebar: getSideBars(sideBarNames),
+    logo: "/hakan-yalcinkaya-logo.png",
   }
 }
