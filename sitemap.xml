@@ -4,15 +4,6 @@
     <loc>https://hakanyalcinkaya.github.io/</loc>
   </url>
   <url>
-    <loc>https://hakanyalcinkaya.github.io/pages/about_me.html</loc>
-  </url>
-  <url>
-    <loc>https://hakanyalcinkaya.github.io/pages/contact.html</loc>
-  </url>
-  <url>
-    <loc>https://hakanyalcinkaya.github.io/hello-world.html</loc>
-  </url>
-  <url>
     <loc>https://hakanyalcinkaya.github.io/python/001-python-ve-kod-yazma-sanati.html</loc>
   </url>
   <url>
@@ -31,7 +22,7 @@
     <loc>https://hakanyalcinkaya.github.io/django/001-django-admin-raw-fields.html</loc>
   </url>
   <url>
-    <loc>https://hakanyalcinkaya.github.io/django/002-python-setattr-ile-instance-a-parametre-gondermek.html</loc>
+    <loc>https://hakanyalcinkaya.github.io/pages/contact.html</loc>
   </url>
   <url>
     <loc>https://hakanyalcinkaya.github.io/javascript-pages/001-headless-cms-nedir.html</loc>
@@ -43,10 +34,7 @@
     <loc>https://hakanyalcinkaya.github.io/youtube/002-jamstack-nedir.html</loc>
   </url>
   <url>
-    <loc>https://hakanyalcinkaya.github.io/youtube/003-vuepress-ile-statik-web-sitesi-olusturma-01.html</loc>
-  </url>
-  <url>
-    <loc>https://hakanyalcinkaya.github.io/youtube/005-vuepress-diger-ayarlarin-incelenmesi.html</loc>
+    <loc>https://hakanyalcinkaya.github.io/django/002-python-setattr-ile-instance-a-parametre-gondermek.html</loc>
   </url>
   <url>
     <loc>https://hakanyalcinkaya.github.io/youtube/004-vuepress-sitemizi-github-pages-uzerinde-ucretsiz-yayinlama.html</loc>
@@ -55,7 +43,16 @@
     <loc>https://hakanyalcinkaya.github.io/youtube/006-yazilimcilar-icin-trello.html</loc>
   </url>
   <url>
+    <loc>https://hakanyalcinkaya.github.io/youtube/005-vuepress-diger-ayarlarin-incelenmesi.html</loc>
+  </url>
+  <url>
+    <loc>https://hakanyalcinkaya.github.io/youtube/003-vuepress-ile-statik-web-sitesi-olusturma-01.html</loc>
+  </url>
+  <url>
     <loc>https://hakanyalcinkaya.github.io/linux/001-nnn-file-manager.html</loc>
+  </url>
+  <url>
+    <loc>https://hakanyalcinkaya.github.io/tools/002-makefile-kullanin.html</loc>
   </url>
   <url>
     <loc>https://hakanyalcinkaya.github.io/tools/001-markdown-ile-calismak.html</loc>
@@ -67,12 +64,15 @@
     <loc>https://hakanyalcinkaya.github.io/tools/004-flatuicolors.html</loc>
   </url>
   <url>
-    <loc>https://hakanyalcinkaya.github.io/tools/002-makefile-kullanin.html</loc>
-  </url>
-  <url>
     <loc>https://hakanyalcinkaya.github.io/tools/005-iterm-ve-itermocil.html</loc>
   </url>
   <url>
     <loc>https://hakanyalcinkaya.github.io/tools/006-terminal-ekranini-kaydetme.html</loc>
+  </url>
+  <url>
+    <loc>https://hakanyalcinkaya.github.io/pages/about_me.html</loc>
+  </url>
+  <url>
+    <loc>https://hakanyalcinkaya.github.io/hello-world.html</loc>
   </url>
 </urlset>
