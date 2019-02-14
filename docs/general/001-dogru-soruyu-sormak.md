@@ -33,6 +33,9 @@ Yaşadığım şoku halen hatırlıyorum :)
 
 Yaşadığınız tecrübelerle birlikte doğru soruları sormak inanılmaz derecede önemlidir. Sorular limitsizdir ama doğru soru sorulursa cevabı muhakkak vardır.
 
+**Konuyu nereye bağlayacaksın Hakan!!** dediğinizi duyar gibi oldum :) O zaman hemen konuyu bağlamaya çalışayım. Google ve YouTube dünyanın iki önemli arama moturu ve her türlü sorunu cevabı var. Yazılım eğitimleri verdiğimde eğitimin problem çözme kısımlarında doğru soruyu sorarak Google'da aratma yapabilmeyi öğretmeye çalışıyorum. Eğer doğru soru sorulursa ***bunu mu demek istediniz*** :p diye bir cevapla karşılaşmadan neredeyse nokta atışı doğru cevabı bulabilmek mümkün. Aradığımız sorularla ilgili cevaplar var. Muhakkak var.. peki ya biz doğru soruyu soruyor muyuz ?
+
+Panik anında sakinleşip cevaba değil soruya yoğunlaşın. Cevap sorunun içinde (içimizde) ;)
 
 ::: warning Yine Einstein Diyor ki;
 "Delilik: Aynı şeyleri tekrar tekrar yapıp farklı sonuçlar beklemek."
