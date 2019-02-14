@@ -22,12 +22,13 @@ let sideBar = [{
 }]
 
 const sideBarNames = [
-  ['Python', 'Python'],
-  ['Django', 'Django'],
-  ['javascript-pages', 'JavaScript'],
-  ['YouTube', 'YouTube'],
-  ['Linux', 'Linux'],
-  ['Tools', 'Araçlar']
+    ['General', 'Genel'],
+    ['Python', 'Python'],
+    ['Django', 'Django'],
+    ['javascript-pages', 'JavaScript'],
+    ['YouTube', 'YouTube'],
+    ['Linux', 'Linux'],
+    ['Tools', 'Araçlar']
 ]
 
 function getSideBars(names) {
