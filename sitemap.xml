@@ -7,6 +7,9 @@
     <loc>https://hakanyalcinkaya.github.io/pages/about_me.html</loc>
   </url>
   <url>
+    <loc>https://hakanyalcinkaya.github.io/pages/contact.html</loc>
+  </url>
+  <url>
     <loc>https://hakanyalcinkaya.github.io/hello-world.html</loc>
   </url>
   <url>
@@ -22,13 +25,10 @@
     <loc>https://hakanyalcinkaya.github.io/python/003-python-interactive-shells.html</loc>
   </url>
   <url>
-    <loc>https://hakanyalcinkaya.github.io/pages/contact.html</loc>
+    <loc>https://hakanyalcinkaya.github.io/python/005-python-3-6-ile-gelen-yenilikler.html</loc>
   </url>
   <url>
     <loc>https://hakanyalcinkaya.github.io/python/004-python-3-6-formatted-string.html</loc>
-  </url>
-  <url>
-    <loc>https://hakanyalcinkaya.github.io/python/005-python-3-6-ile-gelen-yenilikler.html</loc>
   </url>
   <url>
     <loc>https://hakanyalcinkaya.github.io/python/006-pyenv-ile-multi-version-python-kullanin.html</loc>
@@ -61,24 +61,24 @@
     <loc>https://hakanyalcinkaya.github.io/youtube/006-yazilimcilar-icin-trello.html</loc>
   </url>
   <url>
-    <loc>https://hakanyalcinkaya.github.io/tools/001-markdown-ile-calismak.html</loc>
-  </url>
-  <url>
-    <loc>https://hakanyalcinkaya.github.io/tools/002-makefile-kullanin.html</loc>
-  </url>
-  <url>
     <loc>https://hakanyalcinkaya.github.io/linux/001-nnn-file-manager.html</loc>
+  </url>
+  <url>
+    <loc>https://hakanyalcinkaya.github.io/tools/001-markdown-ile-calismak.html</loc>
   </url>
   <url>
     <loc>https://hakanyalcinkaya.github.io/tools/003-neden-mac-kullaniyorum.html</loc>
   </url>
   <url>
-    <loc>https://hakanyalcinkaya.github.io/tools/006-terminal-ekranini-kaydetme.html</loc>
+    <loc>https://hakanyalcinkaya.github.io/tools/002-makefile-kullanin.html</loc>
+  </url>
+  <url>
+    <loc>https://hakanyalcinkaya.github.io/tools/004-flatuicolors.html</loc>
   </url>
   <url>
     <loc>https://hakanyalcinkaya.github.io/tools/005-iterm-ve-itermocil.html</loc>
   </url>
   <url>
-    <loc>https://hakanyalcinkaya.github.io/tools/004-flatuicolors.html</loc>
+    <loc>https://hakanyalcinkaya.github.io/tools/006-terminal-ekranini-kaydetme.html</loc>
   </url>
 </urlset>

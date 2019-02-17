@@ -15,6 +15,8 @@ meta:
     content: hakan yalçınkaya, blog, yazılım, python, JavaScript, YouTube, yazılım araçları
   - name: google-site-verification
     content: KiQkPy9uqcd3U5Zmv-EEycPr5FH4sE8FJzla_Jf5QGM
+  - name: yandex-verification
+    content: 6b737d3fa8aa114e
 features:
 - title: Blog Yazıları
   details: Sitemde; Django, Python, JavaScript ve kullanmayı sevdiğim uygulamalardan bahsettim. Umarım seversin ;)
