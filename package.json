@@ -41,9 +41,9 @@
     "plyr": "^3.4.7",
     "sitemap": "^2.1.0",
     "sitemap-generator": "^8.3.2",
-    "vue": "^2.5.21",
-    "vue-moment": "^4.0.0",
+    "vue": "2.6.7",
     "vue-plyr": "^5.0.4",
+    "vue-server-renderer": "2.5.21",
     "vuepress-plugin-sitemap": "^2.1.1",
     "xmlbuilder": "^10.1.1"
   }

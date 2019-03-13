@@ -92,8 +92,7 @@ PEP 8, Python kodu yazmaya başladığınızda uymanız gereken yazım kurallar�
 ```python
 Command Promt:
 $ pip install pep8
-$ pip install --upgrade pep8
-$ pip uninstall pep8
+$ pip install --upgrade pep8  # Eğer pep8 yüklüyse versiyon yükseltmek için..
 
 $ pep8 --first optparse.py
 optparse.py:69:11: E401 multiple imports on one line
