@@ -4,7 +4,7 @@ date: 2019-06-10 10:20
 description: ""
 category: Django
 tags: ['Django', 'Windows', 'VirtualBox', 'Vagrant']
-youtube: "U2n5aGqou9E"
+youtube: "NFL6tMnm1vw"
 meta:
   - name: description
     content: 
@@ -12,6 +12,9 @@ meta:
     content: hakan yalçınkaya, blog, yazılım, python, JavaScript, YouTube, vue, vuepress, jamstack, staticgen, github, github pages, linux, file manager, mac os, django, vagrant, virtualbox
 ---
 <Title/>
+
+## Hemen Hazırladığım Videoyu İzlemek İstersen;
+<Youtube/>
 
 Eğer Django Framework kullanıyorsan, ister Windows'ta çalışın istersen de macOS'ta çalışın günün sonunda projeniz Linux ortamında kurulacak ve çalıştırılacaktır. Bu yüzden Linux ile bilginin olması ve tüm ortamının Linux'te olması kodların yayına alındığında sana avantaj sağlayacaktır. 
 
