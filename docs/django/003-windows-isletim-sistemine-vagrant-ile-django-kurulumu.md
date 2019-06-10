@@ -1,5 +1,5 @@
 ---
-title: Windows İşletim Sistemine Vagrant ile Linux/Ubuntu Üzerine Django Kurulumu Nasıl Yapılır?
+title: Vagrant ile Windows İşletim Sistemine Linux/Ubuntu ve Django Framework Kurulumu Nasıl Yapılır?
 date: 2019-06-10 10:20
 description: ""
 category: Django
