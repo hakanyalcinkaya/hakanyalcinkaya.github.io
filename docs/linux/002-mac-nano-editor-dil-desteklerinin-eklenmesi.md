@@ -1,3 +1,17 @@
+---
+title: macOS'ta Nano Text Editörü Nasıl Güncellenir? 
+date: 2019-06-10 10:20
+description: ""
+category: Linux
+tags: ['linux', 'macOS', 'file-manager']
+youtube: "U2n5aGqou9E"
+meta:
+  - name: description
+    content: Nano Text Editörünü macOS işletim sisteminde güncelleyip yazılım dilleri desteğini nasıl ekleyebileceğinizi bu makalede bulabilirsiniz.
+  - name: keywords
+    content: hakan yalçınkaya, blog, yazılım, python, JavaScript, YouTube, vue, vuepress, jamstack, staticgen, github, github pages, linux, file manager, mac os
+---
+
 
 ```
               :::                           The                 
@@ -21,6 +35,26 @@ iE   :8888Et.     .G8888.      d88P  Y88b 8888b   888 888     888
 
 ```
 
+Linux dünyasında en insancıl text editörünün Nano olduğu söylenmektedir. Nano macOS işletim sisteminde kurulu olarak gelmektedir ama versiyonu çok eski olduğu için Nano'yu nasıl yükleyeceğini ve Nano'nun syntax desteğini nasıl ekleyeceğini bu yazıda bulabilirsin.
+
+Umarım [Brew](https://brew.sh/) macOS işletim sisteminde kuruludur :) kurulu değilse terminalden hızlıca kurabilirsin.
+
+Terminal'i açtıktan sonra Nano text editörünü güncellemek için:
+
+```bash
+
 brew install nano
+
+# Nano konfigürasyon dosyasını açmak için:
 nano ~/.nanorc
+
+# nano ile açtığın .nanorc dosyasına aşağıdaki satırı eklediğinde 
+# tüm yazılım dilleri için syntax desteği eklenmiş olacak.
 include /usr/local/share/nano/*.nanorc
+
+# veya sadece Python'ı eklemek istersen:
+include /usr/local/share/nano/python.nanorc
+
+# tüm listeyi görmek istersen:
+ls /usr/local/share/nano/
+```
