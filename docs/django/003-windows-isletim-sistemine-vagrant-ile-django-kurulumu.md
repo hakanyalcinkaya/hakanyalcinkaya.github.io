@@ -266,6 +266,15 @@ python manage.py runserver 0:8000
 
 ```
 
+::: warning Browser içerisinde projeni açabilirsin ;)
+Artık kullandığın browser içerisinde:
+
+http://localhost:8000
+
+yazarak artık django projene ulaşabilirsin.
+:::
+
 Harika.. herşey buraya kadar :) vagrant ile birlikte Ubuntu içerisinde projemizi kurduk ve çalıştırdık. Güzel projeler oluşturup GitHub'a ekle ve arada mesaj atmayı unutma. 
+
 
 Başarılar dilerim ;)
