@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: directory
+  path: ''
+  label: Dirs
+  create: all
 - type: heading
   label: Hakan Yalcinkaya
 upload_dir: uploads
