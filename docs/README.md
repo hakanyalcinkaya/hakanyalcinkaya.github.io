@@ -31,7 +31,7 @@ footer: Copyright © 2019
 <ul>
   <li v-for="item in $site.pages">
     <a v-bind:href="item.path">
-    	<span v-if="item.title == 'Home' ">Ana Sayfa</span>
+    	<span v-if="item.title == 'Home' ">Ana Sayfa </span>
     	<span v-else>{{ item.title }}</span>
     </a>
   </li>
