@@ -16,8 +16,7 @@
     "url": "git+https://github.com/hakanyalcinkaya/hakanyalcinkaya.github.io.git"
   },
   "keywords": [
-    "Hakan",
-    "Yalcinkaya",
+    "Hakan Yalcinkaya",
     "Blog",
     "Django",
     "Python",
@@ -45,6 +44,7 @@
     "vue-plyr": "^5.0.4",
     "vue-server-renderer": "2.5.21",
     "vuepress-plugin-sitemap": "^2.1.1",
+    "vuepress-theme-meteorlxy": "^1.8.0",
     "xmlbuilder": "^10.1.1"
   }
 }
