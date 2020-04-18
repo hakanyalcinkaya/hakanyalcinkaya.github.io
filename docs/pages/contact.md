@@ -8,6 +8,7 @@ tags: ['contact']
 
 <Title/>
 
-* [mail atmak istersen: hakanyalcinkaya@gmail.com](mailto:hakanyalcinkaya@gmail.com)
-* [telefon etmek istersen: 506 903 6009](tel:+905069036009)
-* [linkedIn](https://www.linkedin.com/in/hakanyalcinkaya/)
+* [Mail Atmak İstersen: hakanyalcinkaya@gmail.com](mailto:hakanyalcinkaya@gmail.com)
+* [Telefon Etmek İstersen: 506 903 6009](tel:+905069036009)
+* [LinkedIn](https://www.linkedin.com/in/hakanyalcinkaya/)
+* [Hazırladığım Videoları İncelemek İstersen: YouTube](https://www.youtube.com/hakanyalcinkaya?sub_confirmation=1)

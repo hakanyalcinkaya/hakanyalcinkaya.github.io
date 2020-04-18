@@ -64,7 +64,7 @@ module.exports = {
         { text: 'LinkedIn', link: 'https://www.linkedin.com/in/hakanyalcinkaya'},
         { text: 'GitHub', link: 'https://github.com/hakanyalcinkaya/'},
         { text: 'Medium', link: 'https://medium.com/@hakanyalcinkaya'},
-
+        { text: 'YouTube', link: 'https://www.youtube.com/hakanyalcinkaya?sub_confirmation=1'}
   	],
   	sidebar: getSideBars(sideBarNames),
     logo: "/hakan-yalcinkaya-logo.png"
